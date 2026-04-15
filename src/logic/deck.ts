@@ -6,7 +6,12 @@ export function shuffle<T>(array: T[], rng: RNG = Math.random): T[] {
 	const out = [...array];
 	for (let i = out.length - 1; i > 0; i--) {
 		const j = Math.floor(rng() * (i + 1));
-		[out[i], out[j]] = [out[j], out[i]];
+		const a = out[i];
+		const b = out[j];
+		invariant(a !== undefined, `shuffle: index ${i} out of bounds`);
+		invariant(b !== undefined, `shuffle: index ${j} out of bounds`);
+		out[i] = b;
+		out[j] = a;
 	}
 	return out;
 }
