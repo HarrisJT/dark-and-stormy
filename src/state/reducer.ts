@@ -4,9 +4,9 @@ import { pickEntry } from "logic/entries";
 import { invariant } from "logic/invariant";
 import { makeSeededRng } from "logic/rng";
 import { advancePlayer, createInitialState } from "logic/game";
+import { assertTransition, getCurrentPlayer } from "./transitions";
 import type { GameState } from "types";
 
-// Load genres once at module init time (Vite bundles them eagerly).
 const allGenres = loadGenres();
 
 export type Action =
@@ -31,6 +31,7 @@ export function gameReducer(
 
 		case "DRAW": {
 			if (!state) return null;
+			assertTransition(state, "draw", "DRAW");
 			const { card, remaining, reshuffled } = drawCardFromDeck(state.deck);
 			const deckDrawCount = reshuffled ? 1 : state.deckDrawCount + 1;
 			const base = { ...state, deck: remaining, deckDrawCount, currentCard: card };
@@ -39,7 +40,6 @@ export function gameReducer(
 			if (card.type === "guesserChooses" || card.type === "opponentChooses")
 				return { ...base, phase: "genreSelect" };
 
-			// genre card
 			const genre = card.genre;
 			invariant(genre, "Genre card must have a non-null genre");
 			const { entry, usedEntries } = pickEntry(genre, allGenres, state.usedEntries);
@@ -48,25 +48,27 @@ export function gameReducer(
 
 		case "CONTINUE_LOSE_A_TURN":
 			if (!state) return null;
+			assertTransition(state, "loseATurn", "CONTINUE_LOSE_A_TURN");
 			return advancePlayer(state);
 
 		case "SELECT_GENRE": {
 			if (!state) return null;
+			assertTransition(state, "genreSelect", "SELECT_GENRE");
 			const { entry, usedEntries } = pickEntry(action.genre, allGenres, state.usedEntries);
 			return { ...state, currentEntry: entry, currentGenre: action.genre, usedEntries, phase: "prompt" };
 		}
 
 		case "PASS_TO_JUDGE":
 			if (!state) return null;
-			invariant(state.phase === "prompt", `PASS_TO_JUDGE: expected prompt phase, got "${state.phase}"`);
+			assertTransition(state, "prompt", "PASS_TO_JUDGE");
+			// assertTransition already verified currentEntry/currentGenre are non-null
 			return { ...state, phase: "judge" };
 
 		case "JUDGE": {
 			if (!state) return null;
-			invariant(state.phase === "judge", `JUDGE: expected judge phase, got "${state.phase}"`);
+			assertTransition(state, "judge", "JUDGE");
 			if (!action.correct) return advancePlayer(state);
-			const scorer = state.players[state.currentPlayerIndex];
-			invariant(scorer, "currentPlayerIndex must point to a valid player");
+			const scorer = getCurrentPlayer(state);
 			const newScore = scorer.score + 1;
 			const newPlayers = state.players.map((p, i) =>
 				i === state.currentPlayerIndex ? { ...p, score: newScore } : p,
@@ -76,14 +78,16 @@ export function gameReducer(
 			return advancePlayer({ ...state, players: newPlayers });
 		}
 
-		case "PLAY_AGAIN":
+		case "PLAY_AGAIN": {
 			if (!state) return null;
+			assertTransition(state, "gameOver", "PLAY_AGAIN");
 			// Always use real randomness -- the seed only applies to the first game.
 			// To replay a seeded game, reload the page with ?seed=N.
 			return createInitialState(
 				state.players.map((p) => p.name),
 				state.targetScore,
 			);
+		}
 
 		case "NEW_GAME":
 			return null;

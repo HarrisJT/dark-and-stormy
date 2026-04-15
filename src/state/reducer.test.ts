@@ -111,12 +111,12 @@ describe("JUDGE", () => {
 	it("advances player on incorrect", () => {
 		const next = gameReducer(judgeState(), { type: "JUDGE", correct: false });
 		expect(next?.phase).toBe("draw");
-		expect(next?.players[0].score).toBe(0);
+		expect(next?.players[0]?.score).toBe(0);
 	});
 
 	it("awards a point on correct", () => {
 		const next = gameReducer({ ...judgeState(), currentPlayerIndex: 0 }, { type: "JUDGE", correct: true });
-		expect(next?.players[0].score).toBe(1);
+		expect(next?.players[0]?.score).toBe(1);
 	});
 
 	it("transitions to gameOver when target reached", () => {
