@@ -1,0 +1,55 @@
+.gameOver {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	text-align: center;
+}
+
+.winnerLabel {
+	color: var(--accent);
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+}
+
+.winnerName {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.scores {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.scoreRow {
+	display: flex;
+	justify-content: space-between;
+	padding: 12px;
+	background: var(--surface);
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+}
+
+.playAgainBtn {
+	width: 100%;
+	background: var(--accent);
+	color: var(--bg);
+	font-weight: 700;
+	font-size: 1.1rem;
+	padding: 16px;
+}
+
+.newGameBtn {
+	width: 100%;
+	background: transparent;
+	color: var(--muted);
+	border: 1px solid var(--border);
+	font-size: 0.95rem;
+	padding: 12px;
+}
