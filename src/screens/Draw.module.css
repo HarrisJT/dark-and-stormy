@@ -1,0 +1,58 @@
+.draw {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.turnLabel {
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 24px;
+}
+
+.drawBtn {
+	background: var(--accent);
+	color: var(--bg);
+	font-weight: 700;
+	font-size: 1.1rem;
+	padding: 20px;
+}
+
+.deckCounter {
+	text-align: center;
+	color: var(--muted);
+	font-size: 0.85rem;
+	margin-top: -12px;
+}
+
+.scoreboard {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-top: auto;
+}
+
+.scoreRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px;
+	background: var(--surface);
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+}
+
+.scoreRow[data-active="true"] {
+	border-color: var(--accent);
+}
+
+.playerName {
+	font-weight: 600;
+}
+
+.playerScore {
+	color: var(--accent);
+	font-weight: 700;
+}
