@@ -27,8 +27,8 @@ describe("GameOver", () => {
 	it("lists all players sorted by score", () => {
 		render(<GameOver state={baseState} onPlayAgain={vi.fn()} onNewGame={vi.fn()} />);
 		const rows = screen.getAllByText(/pts/);
-		expect(rows[0].textContent).toBe("8 pts");
-		expect(rows[1].textContent).toBe("5 pts");
+		expect(rows[0]!.textContent).toBe("8 pts");
+		expect(rows[1]!.textContent).toBe("5 pts");
 	});
 
 	it("calls onPlayAgain when Play Again is clicked", async () => {
