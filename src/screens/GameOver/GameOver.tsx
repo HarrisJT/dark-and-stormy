@@ -9,7 +9,7 @@ type Props = {
 
 export default function GameOver({ state, onPlayAgain, onNewGame }: Props) {
 	const sorted = [...state.players].sort((a, b) => b.score - a.score);
-	const winner = sorted[0]!;
+	const winner = sorted[0] ?? { name: "Unknown", score: 0 };
 
 	return (
 		<div className={styles.gameOver}>

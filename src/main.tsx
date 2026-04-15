@@ -34,7 +34,13 @@ document.addEventListener("pointerup", () =>
 document.addEventListener("pointercancel", () =>
 	releaseBtn("transform 0.25s ease"),
 );
-createRoot(document.getElementById("root")!).render(
+
+const rootElement = document.getElementById("root");
+if (!rootElement) {
+	throw new Error("Root element not found");
+}
+
+createRoot(rootElement).render(
 	<StrictMode>
 		<App />
 	</StrictMode>,

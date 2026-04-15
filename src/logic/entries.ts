@@ -11,21 +11,21 @@ export function pickEntry(
 	if (!genreData) throw new Error(`Genre not found: ${genreName}`);
 
 	const { entries } = genreData;
-	const used = usedEntries[genreName] ?? [];
+	const used = new Set(usedEntries[genreName] ?? []);
 
 	let available = entries
-		.map((e, i) => ({ entry: e, index: i }))
-		.filter(({ index }) => !used.includes(index));
+		.map((entry, index) => ({ entry, index }))
+		.filter(({ index }) => !used.has(index));
 
 	// Reset pool atomically when all entries have been used once.
 	if (available.length === 0) {
-		available = entries.map((e, i) => ({ entry: e, index: i }));
+		available = entries.map((entry, index) => ({ entry, index }));
 	}
 
 	const pick = available[Math.floor(rng() * available.length)];
 	invariant(pick, "available was non-empty but pick was undefined");
 
-	const wasReset = available.length === entries.length && used.length > 0;
+	const wasReset = available.length === entries.length && used.size > 0;
 	const newUsed = wasReset ? [pick.index] : [...used, pick.index];
 
 	return {

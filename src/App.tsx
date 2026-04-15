@@ -1,6 +1,6 @@
 import { allGenres } from "logic/data";
 import { clearSavedState, loadState, saveState } from "logic/storage";
-import { useEffect, useReducer, useRef } from "react";
+import { useEffect, useReducer } from "react";
 import Draw from "screens/Draw/Draw";
 import GameOver from "screens/GameOver/GameOver";
 import GenreSelect from "screens/GenreSelect/GenreSelect";
@@ -32,19 +32,17 @@ function loadInitialState(): GameState | null {
 export default function App() {
 	const [state, dispatch] = useReducer(gameReducer, null, loadInitialState);
 
-	// Debounced persistence: write to localStorage 150ms after the last state change.
-	const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 	useEffect(() => {
-		if (saveTimer.current) clearTimeout(saveTimer.current);
-		saveTimer.current = setTimeout(() => {
+		const timerId = window.setTimeout(() => {
 			if (state) {
 				saveState(state);
 			} else {
 				clearSavedState();
 			}
 		}, 150);
+
 		return () => {
-			if (saveTimer.current) clearTimeout(saveTimer.current);
+			window.clearTimeout(timerId);
 		};
 	}, [state]);
 
