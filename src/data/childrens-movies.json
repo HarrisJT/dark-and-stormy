@@ -1,0 +1,23 @@
+{
+  "name": "Children's Movies",
+  "entries": [
+    {
+      "openingLines": "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do.",
+      "title": "Alice's Adventures in Wonderland",
+      "author": "Lewis Carroll",
+      "year": 1865
+    },
+    {
+      "openingLines": "When Mary Lennox was sent to Misselthwaite Manor to live with her uncle everybody said she was the most disagreeable-looking child ever seen.",
+      "title": "The Secret Garden",
+      "author": "Frances Hodgson Burnett",
+      "year": 1911
+    },
+    {
+      "openingLines": "Lyra and her daemon moved through the darkening hall, taking care to keep to one side, out of sight of the kitchen.",
+      "title": "The Golden Compass",
+      "author": "Philip Pullman",
+      "year": 1995
+    }
+  ]
+}

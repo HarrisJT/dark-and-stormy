@@ -1,0 +1,23 @@
+{
+  "name": "Novels 1900-1950",
+  "entries": [
+    {
+      "openingLines": "Mother died today.",
+      "title": "The Stranger",
+      "author": "Albert Camus",
+      "year": 1942
+    },
+    {
+      "openingLines": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "year": 1925
+    },
+    {
+      "openingLines": "Once upon a time and a very good time it was there was a moocow coming down along the road and this moocow that was coming down along the road met a nicens little boy named baby tuckoo...",
+      "title": "A Portrait of the Artist as a Young Man",
+      "author": "James Joyce",
+      "year": 1916
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Non-Fiction",
+  "entries": [
+    {
+      "openingLines": "We were somewhere around Barstow on the edge of the desert when the drugs began to take hold.",
+      "title": "Fear and Loathing in Las Vegas",
+      "author": "Hunter S. Thompson",
+      "year": 1971
+    },
+    {
+      "openingLines": "You are about to begin reading Italo Calvino's new novel, If on a winter's night a traveler.",
+      "title": "If on a winter's night a traveler",
+      "author": "Italo Calvino",
+      "year": 1979
+    },
+    {
+      "openingLines": "Last night I dreamt I went to Manderley again.",
+      "title": "Rebecca",
+      "author": "Daphne du Maurier",
+      "year": 1938
+    }
+  ]
+}

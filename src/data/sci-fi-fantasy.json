@@ -1,0 +1,23 @@
+{
+  "name": "Sci-Fi/Fantasy",
+  "entries": [
+    {
+      "openingLines": "It was a bright cold day in April, and the clocks were striking thirteen.",
+      "title": "Nineteen Eighty-Four",
+      "author": "George Orwell",
+      "year": 1949
+    },
+    {
+      "openingLines": "The sky above the port was the color of television, tuned to a dead channel.",
+      "title": "Neuromancer",
+      "author": "William Gibson",
+      "year": 1984
+    },
+    {
+      "openingLines": "In a hole in the ground there lived a hobbit.",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "year": 1937
+    }
+  ]
+}
