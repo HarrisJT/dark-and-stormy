@@ -1,0 +1,91 @@
+.setup {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding-top: 32px;
+}
+
+.heading {
+	font-size: 1.8rem;
+	line-height: 1.1;
+}
+
+.subtitle {
+	color: var(--muted);
+	font-size: 0.95rem;
+	margin-top: 8px;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.label {
+	font-size: 0.85rem;
+	color: var(--muted);
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.playerRow {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.playerInput {
+	flex: 1;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	color: var(--text);
+	padding: 12px;
+	font: inherit;
+	min-height: var(--tap-min);
+}
+
+.removeBtn {
+	background: var(--surface);
+	color: var(--danger);
+	padding: 0 14px;
+	border: 1px solid var(--border);
+	font-size: 1.2rem;
+}
+
+.addBtn {
+	background: var(--surface);
+	color: var(--accent);
+	padding: 12px;
+	border: 1px solid var(--border);
+}
+
+.scoreOptions {
+	display: flex;
+	gap: 8px;
+}
+
+.scoreBtn {
+	flex: 1;
+	padding: 12px;
+	background: var(--surface);
+	color: var(--text);
+	border: 1px solid var(--border);
+}
+
+.scoreBtn[data-active="true"] {
+	background: var(--accent);
+	color: var(--bg);
+	font-weight: 700;
+}
+
+.startBtn {
+	margin-top: auto;
+	background: var(--accent);
+	color: var(--bg);
+	font-weight: 700;
+	font-size: 1.1rem;
+	padding: 16px;
+}
