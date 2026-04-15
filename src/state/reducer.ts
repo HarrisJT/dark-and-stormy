@@ -3,8 +3,8 @@ import { drawCard as drawCardFromDeck } from "logic/deck";
 import { pickEntry } from "logic/entries";
 import { invariant } from "logic/invariant";
 import { makeSeededRng } from "logic/rng";
-import { advancePlayer, createInitialState } from "logic/game";
-import { assertTransition, getCurrentPlayer } from "./transitions";
+import { advancePlayer, applyScore, checkWinner, createInitialState } from "logic/game";
+import { assertTransition } from "./transitions";
 import type { GameState } from "types";
 
 const allGenres = loadGenres();
@@ -68,12 +68,9 @@ export function gameReducer(
 			if (!state) return null;
 			assertTransition(state, "judge", "JUDGE");
 			if (!action.correct) return advancePlayer(state);
-			const scorer = getCurrentPlayer(state);
-			const newScore = scorer.score + 1;
-			const newPlayers = state.players.map((p, i) =>
-				i === state.currentPlayerIndex ? { ...p, score: newScore } : p,
-			);
-			if (newScore >= state.targetScore)
+			const newPlayers = applyScore(state.players, state.currentPlayerIndex, 1);
+			const winnerIdx = checkWinner(newPlayers, state.targetScore);
+			if (winnerIdx !== null)
 				return { ...state, players: newPlayers, phase: "gameOver" };
 			return advancePlayer({ ...state, players: newPlayers });
 		}
