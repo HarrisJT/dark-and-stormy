@@ -12,7 +12,7 @@ type Props = {
 };
 
 export default function Setup({ onStart }: Props) {
-	const [names, setNames] = useState<string[]>(["Player 1", "Player 2"]);
+	const [names, setNames] = useState<string[]>(["Beck", "Harry"]);
 	const [targetScore, setTargetScore] = useState(DEFAULT_TARGET_SCORE);
 
 	const updateName = (i: number, value: string) =>

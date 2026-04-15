@@ -17,8 +17,8 @@ export default function GameOver({ state, onPlayAgain, onNewGame }: Props) {
 			<div className={styles.winnerName}>{winner.name}</div>
 
 			<div className={styles.scores}>
-				{sorted.map((player, i) => (
-					<div key={i} className={styles.scoreRow}>
+				{sorted.map((player) => (
+					<div key={player.name} className={styles.scoreRow}>
 						<span>{player.name}</span>
 						<span>{player.score} pts</span>
 					</div>

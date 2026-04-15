@@ -1,4 +1,4 @@
-import type { Entry, GenreData, RNG } from "types";
+import type { GenreData, RNG } from "types";
 import { describe, expect, it } from "vitest";
 import { pickEntry } from "./entries";
 

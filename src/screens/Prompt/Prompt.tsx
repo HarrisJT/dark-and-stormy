@@ -1,3 +1,4 @@
+import { invariant } from "logic/invariant";
 import { useState } from "react";
 import { getCurrentPlayer } from "state/transitions";
 import type { GameState } from "types";
@@ -12,16 +13,16 @@ export default function Prompt({ state, onPassToJudge }: Props) {
 	const { currentEntry, currentGenre } = state;
 	const [judgeReady, setJudgeReady] = useState(false);
 
-	if (!currentEntry) return null;
+	invariant(currentEntry, "Prompt rendered without currentEntry");
 
-	const guesser = getCurrentPlayer(state);
+	const player = getCurrentPlayer(state);
 
 	if (!judgeReady) {
 		return (
 			<div className={styles.prompt}>
 				<div className={styles.genre}>{currentGenre}</div>
 				<div className={styles.passInstruction}>
-					Pass the phone to a judge, then tap Continue.
+					Pass the phone to an opponent, then tap Continue.
 				</div>
 				<button
 					type="button"
@@ -38,10 +39,10 @@ export default function Prompt({ state, onPassToJudge }: Props) {
 		<div className={styles.prompt}>
 			<div className={styles.genre}>{currentGenre}</div>
 
-			<div className={styles.openingLines}>{currentEntry.openingLines}</div>
+			<div className="openingLines">{currentEntry.openingLines}</div>
 
 			<div className={styles.instruction}>
-				Read aloud. {guesser.name} guesses title, author, or year.
+				Read aloud. {player.name} guesses title, author, or year.
 			</div>
 
 			<button

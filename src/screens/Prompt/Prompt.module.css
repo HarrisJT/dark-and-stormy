@@ -29,17 +29,6 @@
 	padding: 16px;
 }
 
-.openingLines {
-	font-family: var(--font-literary);
-	font-size: 1.15rem;
-	line-height: 1.65;
-	padding: 20px;
-	background: var(--surface);
-	border-radius: var(--radius);
-	border: 1px solid var(--border);
-	overflow-y: auto;
-}
-
 .instruction {
 	text-align: center;
 	color: var(--muted);

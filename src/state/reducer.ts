@@ -1,4 +1,4 @@
-import { loadGenres } from "logic/data";
+import { allGenres } from "logic/data";
 import { drawCard as drawCardFromDeck } from "logic/deck";
 import { pickEntry } from "logic/entries";
 import {
@@ -11,8 +11,6 @@ import { invariant } from "logic/invariant";
 import { makeSeededRng } from "logic/rng";
 import type { GameState } from "types";
 import { assertTransition } from "./transitions";
-
-const allGenres = loadGenres();
 
 export type Action =
 	| { type: "START_GAME"; names: string[]; targetScore: number; seed?: number }
@@ -48,7 +46,7 @@ export function gameReducer(
 			};
 
 			if (card.type === "loseATurn") return { ...base, phase: "loseATurn" };
-			if (card.type === "guesserChooses" || card.type === "opponentChooses")
+			if (card.type === "playerChooses" || card.type === "opponentChooses")
 				return { ...base, phase: "genreSelect" };
 
 			const genre = card.genre;

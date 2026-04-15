@@ -3,7 +3,7 @@ export type RNG = () => number;
 export type CardType =
 	| "genre"
 	| "loseATurn"
-	| "guesserChooses"
+	| "playerChooses"
 	| "opponentChooses";
 
 export type Card = {
@@ -54,11 +54,11 @@ export type GameState = {
 // Versioned wrapper for localStorage -- bump version when GameState shape changes
 // and update the migration in loadState().
 export type PersistedState = {
-	version: 1;
+	version: 2;
 	state: GameState;
 };
 
-export const STORAGE_VERSION = 1 as const;
+export const STORAGE_VERSION = 2 as const;
 export const TARGET_SCORE_OPTIONS = [5, 8, 10, 15] as const;
 export const DEFAULT_TARGET_SCORE = 8;
 export const MIN_PLAYERS = 2;

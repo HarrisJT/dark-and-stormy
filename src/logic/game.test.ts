@@ -1,4 +1,4 @@
-import type { GameState, RNG } from "types";
+import type { RNG } from "types";
 import { describe, expect, it } from "vitest";
 import { loadGenres } from "./data";
 import {

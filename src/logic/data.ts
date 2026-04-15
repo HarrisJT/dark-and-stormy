@@ -18,22 +18,22 @@ const GenreDataSchema = z.object({
 // requires no code changes here.
 const modules = import.meta.glob("../data/*.json", { eager: true });
 
+// Validated once at module load; both App.tsx and the reducer import this.
+export const allGenres: GenreData[] = Object.values(modules)
+	.map((raw, i) => {
+		const result = GenreDataSchema.safeParse(raw);
+		if (!result.success) {
+			console.error(`Invalid genre data at index ${i}:`, result.error.message);
+			return null;
+		}
+		return result.data as GenreData;
+	})
+	.filter((g): g is GenreData => g !== null);
+
 export function loadGenres(): GenreData[] {
-	return Object.values(modules)
-		.map((raw, i) => {
-			const result = GenreDataSchema.safeParse(raw);
-			if (!result.success) {
-				console.error(
-					`Invalid genre data at index ${i}:`,
-					result.error.message,
-				);
-				return null;
-			}
-			return result.data as GenreData;
-		})
-		.filter((g): g is GenreData => g !== null);
+	return allGenres;
 }
 
 export function getGenreNames(): string[] {
-	return loadGenres().map((g) => g.name);
+	return allGenres.map((g) => g.name);
 }

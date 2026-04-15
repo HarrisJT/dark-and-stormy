@@ -4,8 +4,12 @@ import { STORAGE_VERSION } from "types";
 const STORAGE_KEY = "darkandstormy_gamestate";
 
 export function saveState(state: GameState): void {
-	const blob: PersistedState = { version: STORAGE_VERSION, state };
-	localStorage.setItem(STORAGE_KEY, JSON.stringify(blob));
+	try {
+		const blob: PersistedState = { version: STORAGE_VERSION, state };
+		localStorage.setItem(STORAGE_KEY, JSON.stringify(blob));
+	} catch {
+		// Throws in private browsing (Safari/Firefox), quota exceeded, or disabled storage.
+	}
 }
 
 export function loadState(): GameState | null {

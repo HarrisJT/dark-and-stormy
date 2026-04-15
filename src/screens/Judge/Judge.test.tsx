@@ -26,14 +26,17 @@ const baseState: GameState = {
 };
 
 describe("Judge", () => {
-	it("shows the answer title, author, and year", () => {
+	it("shows the opening lines, title, author, and year", () => {
 		render(<Judge state={baseState} onJudge={vi.fn()} />);
+		expect(
+			screen.getByText("April is the cruellest month"),
+		).toBeInTheDocument();
 		expect(screen.getByText("The Waste Land")).toBeInTheDocument();
 		expect(screen.getByText(/T.S. Eliot/i)).toBeInTheDocument();
 		expect(screen.getByText("1922")).toBeInTheDocument();
 	});
 
-	it("names the guesser in the question", () => {
+	it("names the player in the question", () => {
 		render(<Judge state={baseState} onJudge={vi.fn()} />);
 		expect(screen.getByText(/Alice/i)).toBeInTheDocument();
 	});

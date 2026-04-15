@@ -23,11 +23,11 @@ function buildDeck(): Card[] {
 		label: name,
 	}));
 
-	// SPECIAL_CARD_COUNT = 5: 1 loseATurn + 2 guesserChooses + 2 opponentChooses
+	// SPECIAL_CARD_COUNT = 5: 1 loseATurn + 2 playerChooses + 2 opponentChooses
 	const specials: Card[] = [
 		{ type: "loseATurn", genre: null, label: "Lose a Turn" },
-		{ type: "guesserChooses", genre: null, label: "Guesser Chooses" },
-		{ type: "guesserChooses", genre: null, label: "Guesser Chooses" },
+		{ type: "playerChooses", genre: null, label: "Player Chooses" },
+		{ type: "playerChooses", genre: null, label: "Player Chooses" },
 		{ type: "opponentChooses", genre: null, label: "Opponent Chooses" },
 		{ type: "opponentChooses", genre: null, label: "Opponent Chooses" },
 	];

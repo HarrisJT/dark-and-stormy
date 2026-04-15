@@ -1,4 +1,5 @@
-import { invariant } from "logic/invariant";
+import { useState } from "react";
+import { getCurrentPlayer } from "state/transitions";
 import type { GameState } from "types";
 import styles from "./Draw.module.css";
 
@@ -9,16 +10,28 @@ type Props = {
 };
 
 export default function Draw({ state, onDraw, deckSize }: Props) {
-	const currentPlayer = state.players[state.currentPlayerIndex];
-	invariant(currentPlayer, "currentPlayerIndex must point to a valid player");
+	const [drawing, setDrawing] = useState(false);
+	const currentPlayer = getCurrentPlayer(state);
+
+	function handleDraw() {
+		setDrawing(true);
+		setTimeout(onDraw, 350);
+	}
 
 	return (
 		<div className={styles.draw}>
 			<div className={styles.turnLabel}>{currentPlayer.name}'s Turn</div>
 
-			<button type="button" className={styles.drawBtn} onClick={onDraw}>
-				Draw Card
-			</button>
+			<div className={styles.drawArea}>
+				<button
+					type="button"
+					className={`${styles.drawBtn}${drawing ? ` ${styles.drawing}` : ""}`}
+					onClick={handleDraw}
+					disabled={drawing}
+				>
+					<span className={styles.drawLabel}>Draw Genre</span>
+				</button>
+			</div>
 
 			<div className={styles.deckCounter}>
 				Card {state.deckDrawCount} of {deckSize}
@@ -27,7 +40,7 @@ export default function Draw({ state, onDraw, deckSize }: Props) {
 			<div className={styles.scoreboard}>
 				{state.players.map((player, i) => (
 					<div
-						key={i}
+						key={player.name}
 						className={styles.scoreRow}
 						data-active={i === state.currentPlayerIndex}
 					>

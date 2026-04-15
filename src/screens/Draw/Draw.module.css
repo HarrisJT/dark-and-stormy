@@ -1,0 +1,125 @@
+.draw {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.turnLabel {
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 24px;
+}
+
+.drawArea {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.drawBtn {
+	width: 160px;
+	height: 224px;
+	border-radius: 14px;
+	background: var(--surface);
+	border: 2px solid var(--accent);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+	transition:
+		transform 0.15s ease,
+		box-shadow 0.15s ease;
+}
+
+/* Inner decorative border */
+.drawBtn::before {
+	content: "";
+	position: absolute;
+	inset: 8px;
+	border: 1px solid rgba(201, 168, 76, 0.4);
+	border-radius: 8px;
+	pointer-events: none;
+}
+
+/* Background diamond ornament */
+.drawBtn::after {
+	content: "◆";
+	position: absolute;
+	font-size: 4.5rem;
+	color: rgba(201, 168, 76, 0.1);
+	pointer-events: none;
+}
+
+.drawBtn:hover:not(:disabled) {
+	transform: translateY(-4px);
+	box-shadow: 0 14px 36px rgba(0, 0, 0, 0.55);
+}
+
+.drawLabel {
+	position: relative;
+	z-index: 1;
+	font-weight: 700;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	color: var(--accent);
+}
+
+@keyframes cardLift {
+	0% {
+		transform: translateY(0) scale(1);
+		opacity: 1;
+	}
+	40% {
+		transform: translateY(-20px) scale(1.07);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-130px) scale(0.88);
+		opacity: 0;
+	}
+}
+
+.drawing {
+	animation: cardLift 350ms ease-in forwards;
+}
+
+.deckCounter {
+	text-align: center;
+	color: var(--muted);
+	font-size: 0.85rem;
+}
+
+.scoreboard {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.scoreRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px;
+	background: var(--surface);
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+}
+
+.scoreRow[data-active="true"] {
+	border-color: var(--accent);
+}
+
+.playerName {
+	font-weight: 600;
+}
+
+.playerScore {
+	color: var(--accent);
+	font-weight: 700;
+}

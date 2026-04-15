@@ -49,7 +49,7 @@ describe("Prompt", () => {
 		).toBeInTheDocument();
 	});
 
-	it("names the guesser in the instruction after reveal", async () => {
+	it("names the player in the instruction after reveal", async () => {
 		const user = userEvent.setup();
 		render(<Prompt state={baseState} onPassToJudge={vi.fn()} />);
 		await user.click(screen.getByRole("button", { name: /Continue/i }));

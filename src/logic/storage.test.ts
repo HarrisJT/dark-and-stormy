@@ -1,4 +1,5 @@
 import type { GameState } from "types";
+import { STORAGE_VERSION } from "types";
 import { afterEach, describe, expect, it } from "vitest";
 import { clearSavedState, loadState, saveState } from "./storage";
 
@@ -34,7 +35,7 @@ describe("saveState / loadState", () => {
 		saveState(mockState);
 		const raw = localStorage.getItem(STORAGE_KEY);
 		const parsed = JSON.parse(raw!);
-		expect(parsed.version).toBe(1);
+		expect(parsed.version).toBe(STORAGE_VERSION);
 		expect(parsed.state).toBeDefined();
 	});
 

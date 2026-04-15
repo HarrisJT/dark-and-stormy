@@ -20,9 +20,9 @@ const baseState: GameState = {
 	deck: [],
 	deckDrawCount: 3,
 	currentCard: {
-		type: "guesserChooses",
+		type: "playerChooses",
 		genre: null,
-		label: "Guesser Chooses",
+		label: "Player Chooses",
 	},
 	currentEntry: null,
 	currentGenre: null,
@@ -50,7 +50,7 @@ describe("GenreSelect", () => {
 		expect(onSelect).toHaveBeenCalledWith("Poetry");
 	});
 
-	it("shows the guesser's name as picker for guesserChooses", () => {
+	it("shows the player's name as picker for playerChooses", () => {
 		render(
 			<GenreSelect state={baseState} genres={testGenres} onSelect={vi.fn()} />,
 		);

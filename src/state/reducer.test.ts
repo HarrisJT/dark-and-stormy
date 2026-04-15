@@ -60,16 +60,15 @@ describe("START_GAME", () => {
 });
 
 describe("DRAW", () => {
-	it("transitions to genreSelect for guesserChooses / opponentChooses cards", () => {
-		// Inject a state with a guesserChooses card on top of the deck
+	it("transitions to genreSelect for playerChooses / opponentChooses cards", () => {
 		const s = startedState();
 		const stateWithSpecial = {
 			...s,
 			deck: [
 				{
-					type: "guesserChooses" as const,
+					type: "playerChooses" as const,
 					genre: null,
-					label: "Guesser Chooses",
+					label: "Player Chooses",
 				},
 				...s.deck,
 			],

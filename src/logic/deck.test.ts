@@ -26,7 +26,7 @@ describe("createDeck", () => {
 	it("contains the expected special card counts", () => {
 		const deck = createDeck(deterministicRng);
 		expect(deck.filter((c) => c.type === "loseATurn")).toHaveLength(1);
-		expect(deck.filter((c) => c.type === "guesserChooses")).toHaveLength(2);
+		expect(deck.filter((c) => c.type === "playerChooses")).toHaveLength(2);
 		expect(deck.filter((c) => c.type === "opponentChooses")).toHaveLength(2);
 	});
 });

@@ -45,7 +45,7 @@ describe("Setup", () => {
 		const onStart = vi.fn();
 		render(<Setup onStart={onStart} />);
 		await user.click(screen.getByRole("button", { name: /Start Game/i }));
-		expect(onStart).toHaveBeenCalledWith(["Player 1", "Player 2"], 8);
+		expect(onStart).toHaveBeenCalledWith(["Beck", "Harry"], 8);
 	});
 
 	it("uses trimmed names, falling back to Player N for empty inputs", async () => {
@@ -55,6 +55,6 @@ describe("Setup", () => {
 		const inputs = screen.getAllByRole("textbox");
 		await user.clear(inputs[0]!);
 		await user.click(screen.getByRole("button", { name: /Start Game/i }));
-		expect(onStart).toHaveBeenCalledWith(["Player 1", "Player 2"], 8);
+		expect(onStart).toHaveBeenCalledWith(["Player 1", "Harry"], 8);
 	});
 });

@@ -1,3 +1,4 @@
+import { invariant } from "logic/invariant";
 import { getCurrentPlayer } from "state/transitions";
 import type { GameState } from "types";
 import styles from "./Judge.module.css";
@@ -9,14 +10,16 @@ type Props = {
 
 export default function Judge({ state, onJudge }: Props) {
 	const { currentEntry, currentGenre } = state;
-	if (!currentEntry) return null;
+	invariant(currentEntry, "Judge rendered without currentEntry");
 
-	const guesser = getCurrentPlayer(state);
+	const player = getCurrentPlayer(state);
 	const points = 1;
 
 	return (
 		<div className={styles.judge}>
 			<div className={styles.genre}>{currentGenre}</div>
+
+			<div className="openingLines">{currentEntry.openingLines}</div>
 
 			<div className={styles.answer}>
 				<div className={styles.answerTitle}>{currentEntry.title}</div>
@@ -25,8 +28,7 @@ export default function Judge({ state, onJudge }: Props) {
 			</div>
 
 			<div className={styles.question}>
-				Did {guesser.name} get it? ({points} {points === 1 ? "point" : "points"}
-				)
+				Did {player.name} get it? ({points} {points === 1 ? "point" : "points"})
 			</div>
 
 			<div className={styles.buttons}>

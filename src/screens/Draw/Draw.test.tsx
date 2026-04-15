@@ -1,5 +1,4 @@
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { fireEvent, render, screen } from "@testing-library/react";
 import type { GameState } from "types";
 import { describe, expect, it, vi } from "vitest";
 import Draw from "./Draw";
@@ -26,12 +25,15 @@ describe("Draw", () => {
 		expect(screen.getByText(/Alice's Turn/i)).toBeInTheDocument();
 	});
 
-	it("calls onDraw when the button is clicked", async () => {
-		const user = userEvent.setup();
+	it("calls onDraw after the animation delay", () => {
+		vi.useFakeTimers();
 		const onDraw = vi.fn();
 		render(<Draw state={baseState} onDraw={onDraw} deckSize={17} />);
-		await user.click(screen.getByRole("button", { name: /Draw Card/i }));
+		fireEvent.click(screen.getByRole("button", { name: /Draw Genre/i }));
+		expect(onDraw).not.toHaveBeenCalled();
+		vi.runAllTimers();
 		expect(onDraw).toHaveBeenCalledOnce();
+		vi.useRealTimers();
 	});
 
 	it("renders all players in the scoreboard", () => {

@@ -1,26 +1,24 @@
-import { useEffect, useReducer, useRef } from "react";
-import styles from "./App.module.css";
-import { gameReducer } from "state/reducer";
-import type { Action } from "state/reducer";
+import { allGenres } from "logic/data";
 import { clearSavedState, loadState, saveState } from "logic/storage";
-import { loadGenres } from "logic/data";
+import { useEffect, useReducer, useRef } from "react";
+import Draw from "screens/Draw/Draw";
+import GameOver from "screens/GameOver/GameOver";
+import GenreSelect from "screens/GenreSelect/GenreSelect";
+import Judge from "screens/Judge/Judge";
+import LoseATurn from "screens/LoseATurn/LoseATurn";
+import Prompt from "screens/Prompt/Prompt";
+import Setup from "screens/Setup/Setup";
+import { gameReducer } from "state/reducer";
 import type { GameState } from "types";
 import { SPECIAL_CARD_COUNT } from "types";
-import Draw from "screens/Draw";
-import GameOver from "screens/GameOver";
-import GenreSelect from "screens/GenreSelect";
-import Judge from "screens/Judge";
-import LoseATurn from "screens/LoseATurn";
-import Prompt from "screens/Prompt";
-import Setup from "screens/Setup";
+import styles from "./App.module.css";
 
-const allGenres = loadGenres();
 const deckSize = allGenres.length + SPECIAL_CARD_COUNT;
 
 // Read the seed once at module level. ?seed=42 → deterministic game for debugging.
 const debugSeed =
 	typeof location !== "undefined"
-		? new URLSearchParams(location.search).get("seed") ?? undefined
+		? (new URLSearchParams(location.search).get("seed") ?? undefined)
 		: undefined;
 
 function loadInitialState(): GameState | null {
@@ -52,10 +50,6 @@ export default function App() {
 
 	const isPlaying = state !== null && state.phase !== "gameOver";
 
-	function send(action: Action) {
-		dispatch(action);
-	}
-
 	// Strip ?seed=N from the URL so the address bar accurately reflects whether
 	// the current game is seeded. PLAY_AGAIN always uses real randomness; if
 	// someone wants to replay a seeded game they reload the page with ?seed=N.
@@ -72,7 +66,7 @@ export default function App() {
 					<button
 						type="button"
 						className={styles.newGameBtn}
-						onClick={() => send({ type: "NEW_GAME" })}
+						onClick={() => dispatch({ type: "NEW_GAME" })}
 					>
 						New Game
 					</button>
@@ -82,7 +76,7 @@ export default function App() {
 			{!state && (
 				<Setup
 					onStart={(names, targetScore) =>
-						send({
+						dispatch({
 							type: "START_GAME",
 							names,
 							targetScore,
@@ -95,7 +89,7 @@ export default function App() {
 			{state?.phase === "draw" && (
 				<Draw
 					state={state}
-					onDraw={() => send({ type: "DRAW" })}
+					onDraw={() => dispatch({ type: "DRAW" })}
 					deckSize={deckSize}
 				/>
 			)}
@@ -103,7 +97,7 @@ export default function App() {
 			{state?.phase === "loseATurn" && (
 				<LoseATurn
 					state={state}
-					onContinue={() => send({ type: "CONTINUE_LOSE_A_TURN" })}
+					onContinue={() => dispatch({ type: "CONTINUE_LOSE_A_TURN" })}
 				/>
 			)}
 
@@ -111,21 +105,21 @@ export default function App() {
 				<GenreSelect
 					state={state}
 					genres={allGenres}
-					onSelect={(genre) => send({ type: "SELECT_GENRE", genre })}
+					onSelect={(genre) => dispatch({ type: "SELECT_GENRE", genre })}
 				/>
 			)}
 
 			{state?.phase === "prompt" && (
 				<Prompt
 					state={state}
-					onPassToJudge={() => send({ type: "PASS_TO_JUDGE" })}
+					onPassToJudge={() => dispatch({ type: "PASS_TO_JUDGE" })}
 				/>
 			)}
 
 			{state?.phase === "judge" && (
 				<Judge
 					state={state}
-					onJudge={(correct) => send({ type: "JUDGE", correct })}
+					onJudge={(correct) => dispatch({ type: "JUDGE", correct })}
 				/>
 			)}
 
@@ -133,7 +127,7 @@ export default function App() {
 				<GameOver
 					state={state}
 					onPlayAgain={handlePlayAgain}
-					onNewGame={() => send({ type: "NEW_GAME" })}
+					onNewGame={() => dispatch({ type: "NEW_GAME" })}
 				/>
 			)}
 		</div>
