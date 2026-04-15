@@ -1,0 +1,32 @@
+.genreSelect {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.cardLabel {
+	font-size: 1.3rem;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 16px;
+}
+
+.instruction {
+	text-align: center;
+	color: var(--muted);
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+}
+
+.genreBtn {
+	padding: 14px 8px;
+	background: var(--surface);
+	color: var(--text);
+	border: 1px solid var(--border);
+	font-size: 0.9rem;
+}
