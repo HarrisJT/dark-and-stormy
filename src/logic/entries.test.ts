@@ -5,7 +5,11 @@ import { pickEntry } from "./entries";
 // Cycles through a fixed sequence so picks are deterministic.
 function makeSeqRng(...values: number[]): RNG {
 	let i = 0;
-	return () => values[i++ % values.length];
+	return () => {
+		const v = values[i++ % values.length];
+		if (v === undefined) throw new Error("makeSeqRng: no values provided");
+		return v;
+	};
 }
 
 const testData: GenreData[] = [
@@ -34,7 +38,7 @@ describe("pickEntry", () => {
 	it("tracks used indices for the genre", () => {
 		const rng = makeSeqRng(0);
 		const { entry, usedEntries } = pickEntry("Poetry", testData, {}, rng);
-		const poetryEntries = testData[0].entries;
+		const poetryEntries = testData.find((g) => g.name === "Poetry")?.entries ?? [];
 		const idx = poetryEntries.indexOf(entry);
 		expect(usedEntries.Poetry).toContain(idx);
 	});
