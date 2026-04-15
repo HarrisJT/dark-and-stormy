@@ -1,6 +1,6 @@
 import { getNextPlayerIndex } from "logic/game";
 import { getCurrentPlayer } from "state/transitions";
-import type { GenreData, GameState } from "types";
+import type { GameState, GenreData } from "types";
 import styles from "./GenreSelect.module.css";
 
 type Props = {

@@ -1,5 +1,5 @@
-import { z } from "zod";
 import type { GenreData } from "types";
+import { z } from "zod";
 
 const EntrySchema = z.object({
 	openingLines: z.string().min(1),
@@ -23,7 +23,10 @@ export function loadGenres(): GenreData[] {
 		.map((raw, i) => {
 			const result = GenreDataSchema.safeParse(raw);
 			if (!result.success) {
-				console.error(`Invalid genre data at index ${i}:`, result.error.message);
+				console.error(
+					`Invalid genre data at index ${i}:`,
+					result.error.message,
+				);
 				return null;
 			}
 			return result.data as GenreData;

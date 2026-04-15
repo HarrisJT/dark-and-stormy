@@ -1,25 +1,44 @@
+import { loadGenres } from "logic/data";
 import { describe, expect, it } from "vitest";
 import { gameReducer } from "./reducer";
-import { loadGenres } from "logic/data";
 
 const genres = loadGenres();
 const twoPlayers = ["Alice", "Bob"];
 
-const mockEntry = { openingLines: "It was...", title: "Test Book", author: "Author", year: 2000 };
+const mockEntry = {
+	openingLines: "It was...",
+	title: "Test Book",
+	author: "Author",
+	year: 2000,
+};
 
 function startedState() {
-	const s = gameReducer(null, { type: "START_GAME", names: twoPlayers, targetScore: 8 });
+	const s = gameReducer(null, {
+		type: "START_GAME",
+		names: twoPlayers,
+		targetScore: 8,
+	});
 	if (!s) throw new Error("START_GAME returned null");
 	return s;
 }
 
 // States that require non-null currentEntry/currentGenre (enforced by assertTransition).
 function promptState() {
-	return { ...startedState(), phase: "prompt" as const, currentEntry: mockEntry, currentGenre: "Poetry" };
+	return {
+		...startedState(),
+		phase: "prompt" as const,
+		currentEntry: mockEntry,
+		currentGenre: "Poetry",
+	};
 }
 
 function judgeState() {
-	return { ...startedState(), phase: "judge" as const, currentEntry: mockEntry, currentGenre: "Poetry" };
+	return {
+		...startedState(),
+		phase: "judge" as const,
+		currentEntry: mockEntry,
+		currentGenre: "Poetry",
+	};
 }
 
 describe("START_GAME", () => {
@@ -46,7 +65,14 @@ describe("DRAW", () => {
 		const s = startedState();
 		const stateWithSpecial = {
 			...s,
-			deck: [{ type: "guesserChooses" as const, genre: null, label: "Guesser Chooses" }, ...s.deck],
+			deck: [
+				{
+					type: "guesserChooses" as const,
+					genre: null,
+					label: "Guesser Chooses",
+				},
+				...s.deck,
+			],
 		};
 		const next = gameReducer(stateWithSpecial, { type: "DRAW" });
 		expect(next?.phase).toBe("genreSelect");
@@ -56,7 +82,10 @@ describe("DRAW", () => {
 		const s = startedState();
 		const stateWithLose = {
 			...s,
-			deck: [{ type: "loseATurn" as const, genre: null, label: "Lose a Turn" }, ...s.deck],
+			deck: [
+				{ type: "loseATurn" as const, genre: null, label: "Lose a Turn" },
+				...s.deck,
+			],
 		};
 		const next = gameReducer(stateWithLose, { type: "DRAW" });
 		expect(next?.phase).toBe("loseATurn");
@@ -64,7 +93,11 @@ describe("DRAW", () => {
 
 	it("transitions to prompt for a genre card", () => {
 		const s = startedState();
-		const genreCard = { type: "genre" as const, genre: genres[0]?.name ?? "Poetry", label: genres[0]?.name ?? "Poetry" };
+		const genreCard = {
+			type: "genre" as const,
+			genre: genres[0]?.name ?? "Poetry",
+			label: genres[0]?.name ?? "Poetry",
+		};
 		const stateWithGenre = { ...s, deck: [genreCard, ...s.deck] };
 		const next = gameReducer(stateWithGenre, { type: "DRAW" });
 		expect(next?.phase).toBe("prompt");
@@ -79,7 +112,11 @@ describe("DRAW", () => {
 
 describe("CONTINUE_LOSE_A_TURN", () => {
 	it("advances to next player in draw phase", () => {
-		const s = { ...startedState(), phase: "loseATurn" as const, currentPlayerIndex: 0 };
+		const s = {
+			...startedState(),
+			phase: "loseATurn" as const,
+			currentPlayerIndex: 0,
+		};
 		const next = gameReducer(s, { type: "CONTINUE_LOSE_A_TURN" });
 		expect(next?.phase).toBe("draw");
 		expect(next?.currentPlayerIndex).toBe(1);
@@ -89,7 +126,10 @@ describe("CONTINUE_LOSE_A_TURN", () => {
 describe("SELECT_GENRE", () => {
 	it("sets currentGenre and transitions to prompt", () => {
 		const s = { ...startedState(), phase: "genreSelect" as const };
-		const next = gameReducer(s, { type: "SELECT_GENRE", genre: genres[0]?.name ?? "Poetry" });
+		const next = gameReducer(s, {
+			type: "SELECT_GENRE",
+			genre: genres[0]?.name ?? "Poetry",
+		});
 		expect(next?.phase).toBe("prompt");
 		expect(next?.currentGenre).toBe(genres[0]?.name ?? "Poetry");
 		expect(next?.currentEntry).not.toBeNull();
@@ -103,7 +143,9 @@ describe("PASS_TO_JUDGE", () => {
 	});
 
 	it("throws when called outside prompt phase", () => {
-		expect(() => gameReducer(startedState(), { type: "PASS_TO_JUDGE" })).toThrow(/prompt/);
+		expect(() =>
+			gameReducer(startedState(), { type: "PASS_TO_JUDGE" }),
+		).toThrow(/prompt/);
 	});
 });
 
@@ -115,7 +157,10 @@ describe("JUDGE", () => {
 	});
 
 	it("awards a point on correct", () => {
-		const next = gameReducer({ ...judgeState(), currentPlayerIndex: 0 }, { type: "JUDGE", correct: true });
+		const next = gameReducer(
+			{ ...judgeState(), currentPlayerIndex: 0 },
+			{ type: "JUDGE", correct: true },
+		);
 		expect(next?.players[0]?.score).toBe(1);
 	});
 
@@ -128,7 +173,9 @@ describe("JUDGE", () => {
 	});
 
 	it("throws when called outside judge phase", () => {
-		expect(() => gameReducer(startedState(), { type: "JUDGE", correct: true })).toThrow(/judge/);
+		expect(() =>
+			gameReducer(startedState(), { type: "JUDGE", correct: true }),
+		).toThrow(/judge/);
 	});
 });
 

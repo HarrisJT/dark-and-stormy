@@ -1,23 +1,23 @@
 {
-  "name": "Shakespeare",
-  "entries": [
-    {
-      "openingLines": "Two households, both alike in dignity, in fair Verona, where we lay our scene...",
-      "title": "Romeo and Juliet",
-      "author": "William Shakespeare",
-      "year": 1597
-    },
-    {
-      "openingLines": "Who's there?",
-      "title": "Hamlet",
-      "author": "William Shakespeare",
-      "year": 1601
-    },
-    {
-      "openingLines": "If music be the food of love, play on...",
-      "title": "Twelfth Night",
-      "author": "William Shakespeare",
-      "year": 1602
-    }
-  ]
+	"name": "Shakespeare",
+	"entries": [
+		{
+			"openingLines": "Two households, both alike in dignity, in fair Verona, where we lay our scene...",
+			"title": "Romeo and Juliet",
+			"author": "William Shakespeare",
+			"year": 1597
+		},
+		{
+			"openingLines": "Who's there?",
+			"title": "Hamlet",
+			"author": "William Shakespeare",
+			"year": 1601
+		},
+		{
+			"openingLines": "If music be the food of love, play on...",
+			"title": "Twelfth Night",
+			"author": "William Shakespeare",
+			"year": 1602
+		}
+	]
 }

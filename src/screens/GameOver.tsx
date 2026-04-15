@@ -25,7 +25,11 @@ export default function GameOver({ state, onPlayAgain, onNewGame }: Props) {
 				))}
 			</div>
 
-			<button type="button" className={styles.playAgainBtn} onClick={onPlayAgain}>
+			<button
+				type="button"
+				className={styles.playAgainBtn}
+				onClick={onPlayAgain}
+			>
 				Play Again
 			</button>
 			<button type="button" className={styles.newGameBtn} onClick={onNewGame}>

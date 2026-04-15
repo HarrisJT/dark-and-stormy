@@ -1,23 +1,23 @@
 {
-  "name": "Non-Fiction",
-  "entries": [
-    {
-      "openingLines": "The village of Holcomb stands on the high wheat plains of western Kansas, a lonesome area that other Kansans call 'out there.'",
-      "title": "In Cold Blood",
-      "author": "Truman Capote",
-      "year": 1966
-    },
-    {
-      "openingLines": "We were somewhere around Barstow on the edge of the desert when the drugs began to take hold.",
-      "title": "Fear and Loathing in Las Vegas",
-      "author": "Hunter S. Thompson",
-      "year": 1971
-    },
-    {
-      "openingLines": "On August 6, 1945, at fifteen minutes past eight in the morning, Japanese time, at the moment when the atomic bomb flashed above Hiroshima...",
-      "title": "Hiroshima",
-      "author": "John Hersey",
-      "year": 1946
-    }
-  ]
+	"name": "Non-Fiction",
+	"entries": [
+		{
+			"openingLines": "The village of Holcomb stands on the high wheat plains of western Kansas, a lonesome area that other Kansans call 'out there.'",
+			"title": "In Cold Blood",
+			"author": "Truman Capote",
+			"year": 1966
+		},
+		{
+			"openingLines": "We were somewhere around Barstow on the edge of the desert when the drugs began to take hold.",
+			"title": "Fear and Loathing in Las Vegas",
+			"author": "Hunter S. Thompson",
+			"year": 1971
+		},
+		{
+			"openingLines": "On August 6, 1945, at fifteen minutes past eight in the morning, Japanese time, at the moment when the atomic bomb flashed above Hiroshima...",
+			"title": "Hiroshima",
+			"author": "John Hersey",
+			"year": 1946
+		}
+	]
 }

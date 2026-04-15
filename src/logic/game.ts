@@ -1,7 +1,7 @@
 import type { GameState, Player, RNG } from "types";
 import { MIN_PLAYERS } from "types";
-import { invariant } from "./invariant";
 import { createDeck, shuffle } from "./deck";
+import { invariant } from "./invariant";
 
 export function createInitialState(
 	names: string[],

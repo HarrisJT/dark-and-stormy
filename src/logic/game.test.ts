@@ -1,5 +1,6 @@
-import { describe, expect, it } from "vitest";
 import type { GameState, RNG } from "types";
+import { describe, expect, it } from "vitest";
+import { loadGenres } from "./data";
 import {
 	advancePlayer,
 	applyScore,
@@ -7,7 +8,6 @@ import {
 	createInitialState,
 	getNextPlayerIndex,
 } from "./game";
-import { loadGenres } from "./data";
 
 // Deterministic RNG for tests -- always returns 0 so shuffle is a no-op.
 const deterministicRng: RNG = () => 0;
@@ -44,7 +44,9 @@ describe("createInitialState", () => {
 	});
 
 	it("throws when fewer than MIN_PLAYERS names are provided", () => {
-		expect(() => createInitialState(["Alice"], 8, deterministicRng)).toThrow(/MIN_PLAYERS|2 players/i);
+		expect(() => createInitialState(["Alice"], 8, deterministicRng)).toThrow(
+			/MIN_PLAYERS|2 players/i,
+		);
 		expect(() => createInitialState([], 8, deterministicRng)).toThrow();
 	});
 });
@@ -63,7 +65,10 @@ describe("getNextPlayerIndex", () => {
 
 describe("applyScore", () => {
 	it("adds the given points to the scorer", () => {
-		const players = [{ name: "Alice", score: 3 }, { name: "Bob", score: 5 }];
+		const players = [
+			{ name: "Alice", score: 3 },
+			{ name: "Bob", score: 5 },
+		];
 		const result1 = applyScore(players, 0, 1);
 		expect(result1[0]?.score).toBe(4);
 		const result2 = applyScore(players, 0, 2);
@@ -71,7 +76,10 @@ describe("applyScore", () => {
 	});
 
 	it("does not change other players", () => {
-		const players = [{ name: "Alice", score: 3 }, { name: "Bob", score: 5 }];
+		const players = [
+			{ name: "Alice", score: 3 },
+			{ name: "Bob", score: 5 },
+		];
 		const result = applyScore(players, 0, 1);
 		expect(result[1]?.score).toBe(5);
 	});
@@ -79,12 +87,18 @@ describe("applyScore", () => {
 
 describe("checkWinner", () => {
 	it("returns null when no player has reached target", () => {
-		const players = [{ name: "Alice", score: 7 }, { name: "Bob", score: 5 }];
+		const players = [
+			{ name: "Alice", score: 7 },
+			{ name: "Bob", score: 5 },
+		];
 		expect(checkWinner(players, 8)).toBeNull();
 	});
 
 	it("returns the index of the winning player", () => {
-		const players = [{ name: "Alice", score: 8 }, { name: "Bob", score: 5 }];
+		const players = [
+			{ name: "Alice", score: 8 },
+			{ name: "Bob", score: 5 },
+		];
 		expect(checkWinner(players, 8)).toBe(0);
 	});
 });

@@ -1,12 +1,15 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
 import type { GameState } from "types";
+import { describe, expect, it, vi } from "vitest";
 import Draw from "./Draw";
 
 const baseState: GameState = {
 	phase: "draw",
-	players: [{ name: "Alice", score: 3 }, { name: "Bob", score: 5 }],
+	players: [
+		{ name: "Alice", score: 3 },
+		{ name: "Bob", score: 5 },
+	],
 	currentPlayerIndex: 0,
 	targetScore: 8,
 	deck: [],

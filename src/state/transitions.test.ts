@@ -1,11 +1,14 @@
-import { describe, expect, it } from "vitest";
 import type { GameState } from "types";
+import { describe, expect, it } from "vitest";
 import { assertTransition, getCurrentPlayer } from "./transitions";
 
 function baseState(overrides: Partial<GameState> = {}): GameState {
 	return {
 		phase: "draw",
-		players: [{ name: "Alice", score: 0 }, { name: "Bob", score: 1 }],
+		players: [
+			{ name: "Alice", score: 0 },
+			{ name: "Bob", score: 1 },
+		],
 		currentPlayerIndex: 0,
 		targetScore: 8,
 		deck: [],
@@ -39,13 +42,21 @@ describe("assertTransition", () => {
 			currentEntry: { openingLines: "x", title: "T", author: "A", year: 2000 },
 			currentGenre: "Poetry",
 		});
-		expect(() => assertTransition(state, ["prompt", "judge"], "TEST")).not.toThrow();
+		expect(() =>
+			assertTransition(state, ["prompt", "judge"], "TEST"),
+		).not.toThrow();
 	});
 
 	it("throws when a required field for the phase is null", () => {
 		// prompt phase requires currentEntry and currentGenre
-		const state = baseState({ phase: "prompt", currentEntry: null, currentGenre: null });
-		expect(() => assertTransition(state, "prompt", "TEST")).toThrow(/currentEntry/);
+		const state = baseState({
+			phase: "prompt",
+			currentEntry: null,
+			currentGenre: null,
+		});
+		expect(() => assertTransition(state, "prompt", "TEST")).toThrow(
+			/currentEntry/,
+		);
 	});
 });
 

@@ -1,23 +1,23 @@
 {
-  "name": "Novels Pre-1900",
-  "entries": [
-    {
-      "openingLines": "Call me Ishmael.",
-      "title": "Moby-Dick",
-      "author": "Herman Melville",
-      "year": 1851
-    },
-    {
-      "openingLines": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness...",
-      "title": "A Tale of Two Cities",
-      "author": "Charles Dickens",
-      "year": 1859
-    },
-    {
-      "openingLines": "Whether I shall turn out to be the hero of my own life, or whether that station will be held by anybody else, these pages must show.",
-      "title": "David Copperfield",
-      "author": "Charles Dickens",
-      "year": 1850
-    }
-  ]
+	"name": "Novels Pre-1900",
+	"entries": [
+		{
+			"openingLines": "Call me Ishmael.",
+			"title": "Moby-Dick",
+			"author": "Herman Melville",
+			"year": 1851
+		},
+		{
+			"openingLines": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness...",
+			"title": "A Tale of Two Cities",
+			"author": "Charles Dickens",
+			"year": 1859
+		},
+		{
+			"openingLines": "Whether I shall turn out to be the hero of my own life, or whether that station will be held by anybody else, these pages must show.",
+			"title": "David Copperfield",
+			"author": "Charles Dickens",
+			"year": 1850
+		}
+	]
 }

@@ -1,6 +1,6 @@
 import type { Card, RNG } from "types";
-import { invariant } from "./invariant";
 import { getGenreNames } from "./data";
+import { invariant } from "./invariant";
 
 export function shuffle<T>(array: T[], rng: RNG = Math.random): T[] {
 	const out = [...array];

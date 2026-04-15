@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { DEFAULT_TARGET_SCORE, MAX_PLAYERS, MIN_PLAYERS, TARGET_SCORE_OPTIONS } from "types";
+import {
+	DEFAULT_TARGET_SCORE,
+	MAX_PLAYERS,
+	MIN_PLAYERS,
+	TARGET_SCORE_OPTIONS,
+} from "types";
 import styles from "./Setup.module.css";
 
 type Props = {

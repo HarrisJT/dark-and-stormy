@@ -1,23 +1,23 @@
 {
-  "name": "Mysteries",
-  "entries": [
-    {
-      "openingLines": "Mr. Sherlock Holmes, who was usually very late in the mornings, save upon those not infrequent occasions when he was up all night, was seated at the breakfast table.",
-      "title": "The Hound of the Baskervilles",
-      "author": "Arthur Conan Doyle",
-      "year": 1902
-    },
-    {
-      "openingLines": "It was about eleven o'clock in the morning, mid October, with the sun not shining and a look of hard wet rain in the clearness of the foothills.",
-      "title": "The Big Sleep",
-      "author": "Raymond Chandler",
-      "year": 1939
-    },
-    {
-      "openingLines": "Miss Marple was sitting by her window one morning in the cheerful winter sunshine.",
-      "title": "A Murder Is Announced",
-      "author": "Agatha Christie",
-      "year": 1950
-    }
-  ]
+	"name": "Mysteries",
+	"entries": [
+		{
+			"openingLines": "Mr. Sherlock Holmes, who was usually very late in the mornings, save upon those not infrequent occasions when he was up all night, was seated at the breakfast table.",
+			"title": "The Hound of the Baskervilles",
+			"author": "Arthur Conan Doyle",
+			"year": 1902
+		},
+		{
+			"openingLines": "It was about eleven o'clock in the morning, mid October, with the sun not shining and a look of hard wet rain in the clearness of the foothills.",
+			"title": "The Big Sleep",
+			"author": "Raymond Chandler",
+			"year": 1939
+		},
+		{
+			"openingLines": "Miss Marple was sitting by her window one morning in the cheerful winter sunshine.",
+			"title": "A Murder Is Announced",
+			"author": "Agatha Christie",
+			"year": 1950
+		}
+	]
 }

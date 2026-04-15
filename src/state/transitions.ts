@@ -43,6 +43,9 @@ export function assertTransition(
 // Centralizes the one critical index assumption: currentPlayerIndex is always valid.
 export function getCurrentPlayer(state: GameState): Player {
 	const player = state.players[state.currentPlayerIndex];
-	invariant(player, `getCurrentPlayer: currentPlayerIndex ${state.currentPlayerIndex} out of bounds (${state.players.length} players)`);
+	invariant(
+		player,
+		`getCurrentPlayer: currentPlayerIndex ${state.currentPlayerIndex} out of bounds (${state.players.length} players)`,
+	);
 	return player;
 }

@@ -1,12 +1,15 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
 import type { GameState } from "types";
+import { describe, expect, it, vi } from "vitest";
 import LoseATurn from "./LoseATurn";
 
 const baseState: GameState = {
 	phase: "loseATurn",
-	players: [{ name: "Alice", score: 2 }, { name: "Bob", score: 1 }],
+	players: [
+		{ name: "Alice", score: 2 },
+		{ name: "Bob", score: 1 },
+	],
 	currentPlayerIndex: 0,
 	targetScore: 8,
 	deck: [],

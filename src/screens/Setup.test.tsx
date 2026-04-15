@@ -6,7 +6,9 @@ import Setup from "./Setup";
 describe("Setup", () => {
 	it("renders title and subtitle", () => {
 		render(<Setup onStart={vi.fn()} />);
-		expect(screen.getByText(/It Was a Dark and Stormy Night/i)).toBeInTheDocument();
+		expect(
+			screen.getByText(/It Was a Dark and Stormy Night/i),
+		).toBeInTheDocument();
 		expect(screen.getByText(/literary trivia/i)).toBeInTheDocument();
 	});
 
@@ -26,7 +28,9 @@ describe("Setup", () => {
 		const user = userEvent.setup();
 		render(<Setup onStart={vi.fn()} />);
 		await user.click(screen.getByRole("button", { name: /Add Player/i }));
-		const removeButtons = screen.getAllByRole("button", { name: /Remove player/i });
+		const removeButtons = screen.getAllByRole("button", {
+			name: /Remove player/i,
+		});
 		await user.click(removeButtons[0]!);
 		expect(screen.getAllByRole("textbox")).toHaveLength(2);
 	});

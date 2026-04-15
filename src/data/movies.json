@@ -1,23 +1,23 @@
 {
-  "name": "Movies",
-  "entries": [
-    {
-      "openingLines": "It was a pleasure to burn.",
-      "title": "Fahrenheit 451",
-      "author": "Ray Bradbury",
-      "year": 1953
-    },
-    {
-      "openingLines": "All children, except one, grow up.",
-      "title": "Peter Pan",
-      "author": "J.M. Barrie",
-      "year": 1911
-    },
-    {
-      "openingLines": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-      "title": "Pride and Prejudice",
-      "author": "Jane Austen",
-      "year": 1813
-    }
-  ]
+	"name": "Movies",
+	"entries": [
+		{
+			"openingLines": "It was a pleasure to burn.",
+			"title": "Fahrenheit 451",
+			"author": "Ray Bradbury",
+			"year": 1953
+		},
+		{
+			"openingLines": "All children, except one, grow up.",
+			"title": "Peter Pan",
+			"author": "J.M. Barrie",
+			"year": 1911
+		},
+		{
+			"openingLines": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+			"title": "Pride and Prejudice",
+			"author": "Jane Austen",
+			"year": 1813
+		}
+	]
 }

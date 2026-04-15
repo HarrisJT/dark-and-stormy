@@ -25,14 +25,23 @@ export default function Judge({ state, onJudge }: Props) {
 			</div>
 
 			<div className={styles.question}>
-				Did {guesser.name} get it? ({points} {points === 1 ? "point" : "points"})
+				Did {guesser.name} get it? ({points} {points === 1 ? "point" : "points"}
+				)
 			</div>
 
 			<div className={styles.buttons}>
-				<button type="button" className={styles.correctBtn} onClick={() => onJudge(true)}>
+				<button
+					type="button"
+					className={styles.correctBtn}
+					onClick={() => onJudge(true)}
+				>
 					Correct
 				</button>
-				<button type="button" className={styles.incorrectBtn} onClick={() => onJudge(false)}>
+				<button
+					type="button"
+					className={styles.incorrectBtn}
+					onClick={() => onJudge(false)}
+				>
 					Incorrect
 				</button>
 			</div>

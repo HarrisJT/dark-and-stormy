@@ -1,12 +1,15 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
 import type { GameState } from "types";
+import { describe, expect, it, vi } from "vitest";
 import Prompt from "./Prompt";
 
 const baseState: GameState = {
 	phase: "prompt",
-	players: [{ name: "Alice", score: 0 }, { name: "Bob", score: 0 }],
+	players: [
+		{ name: "Alice", score: 0 },
+		{ name: "Bob", score: 0 },
+	],
 	currentPlayerIndex: 0,
 	targetScore: 8,
 	deck: [],
@@ -32,14 +35,18 @@ describe("Prompt", () => {
 
 	it("shows Continue button before judge is ready", () => {
 		render(<Prompt state={baseState} onPassToJudge={vi.fn()} />);
-		expect(screen.getByRole("button", { name: /Continue/i })).toBeInTheDocument();
+		expect(
+			screen.getByRole("button", { name: /Continue/i }),
+		).toBeInTheDocument();
 	});
 
 	it("reveals opening line after Continue is tapped", async () => {
 		const user = userEvent.setup();
 		render(<Prompt state={baseState} onPassToJudge={vi.fn()} />);
 		await user.click(screen.getByRole("button", { name: /Continue/i }));
-		expect(screen.getByText(/April is the cruellest month/i)).toBeInTheDocument();
+		expect(
+			screen.getByText(/April is the cruellest month/i),
+		).toBeInTheDocument();
 	});
 
 	it("names the guesser in the instruction after reveal", async () => {

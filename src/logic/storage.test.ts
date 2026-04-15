@@ -1,12 +1,15 @@
-import { afterEach, describe, expect, it } from "vitest";
 import type { GameState } from "types";
+import { afterEach, describe, expect, it } from "vitest";
 import { clearSavedState, loadState, saveState } from "./storage";
 
 const STORAGE_KEY = "darkandstormy_gamestate";
 
 const mockState: GameState = {
 	phase: "draw",
-	players: [{ name: "Alice", score: 2 }, { name: "Bob", score: 1 }],
+	players: [
+		{ name: "Alice", score: 2 },
+		{ name: "Bob", score: 1 },
+	],
 	currentPlayerIndex: 0,
 	targetScore: 8,
 	deck: [],
@@ -45,7 +48,10 @@ describe("saveState / loadState", () => {
 	});
 
 	it("returns null for a mismatched version (future migration gate)", () => {
-		localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 99, state: mockState }));
+		localStorage.setItem(
+			STORAGE_KEY,
+			JSON.stringify({ version: 99, state: mockState }),
+		);
 		expect(loadState()).toBeNull();
 	});
 });

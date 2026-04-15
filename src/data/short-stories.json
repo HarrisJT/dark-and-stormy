@@ -1,23 +1,23 @@
 {
-  "name": "Short Stories",
-  "entries": [
-    {
-      "openingLines": "It was a dark and stormy night; the rain fell in torrents — except at occasional intervals, when it was checked by a violent gust of wind which swept up the streets.",
-      "title": "Paul Clifford",
-      "author": "Edward Bulwer-Lytton",
-      "year": 1830
-    },
-    {
-      "openingLines": "The thousand injuries of Fortunato I had borne as I best could, but when he ventured upon insult I vowed revenge.",
-      "title": "The Cask of Amontillado",
-      "author": "Edgar Allan Poe",
-      "year": 1846
-    },
-    {
-      "openingLines": "The morning of June 27th was clear and sunny, with the fresh warmth of a full-summer day.",
-      "title": "The Lottery",
-      "author": "Shirley Jackson",
-      "year": 1948
-    }
-  ]
+	"name": "Short Stories",
+	"entries": [
+		{
+			"openingLines": "It was a dark and stormy night; the rain fell in torrents — except at occasional intervals, when it was checked by a violent gust of wind which swept up the streets.",
+			"title": "Paul Clifford",
+			"author": "Edward Bulwer-Lytton",
+			"year": 1830
+		},
+		{
+			"openingLines": "The thousand injuries of Fortunato I had borne as I best could, but when he ventured upon insult I vowed revenge.",
+			"title": "The Cask of Amontillado",
+			"author": "Edgar Allan Poe",
+			"year": 1846
+		},
+		{
+			"openingLines": "The morning of June 27th was clear and sunny, with the fresh warmth of a full-summer day.",
+			"title": "The Lottery",
+			"author": "Shirley Jackson",
+			"year": 1948
+		}
+	]
 }

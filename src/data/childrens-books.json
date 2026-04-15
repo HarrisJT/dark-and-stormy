@@ -1,23 +1,23 @@
 {
-  "name": "Children's Books",
-  "entries": [
-    {
-      "openingLines": "Where's Papa going with that axe?",
-      "title": "Charlotte's Web",
-      "author": "E.B. White",
-      "year": 1952
-    },
-    {
-      "openingLines": "Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much.",
-      "title": "Harry Potter and the Philosopher's Stone",
-      "author": "J.K. Rowling",
-      "year": 1997
-    },
-    {
-      "openingLines": "Once there were four children whose names were Peter, Susan, Edmund and Lucy.",
-      "title": "The Lion, the Witch and the Wardrobe",
-      "author": "C.S. Lewis",
-      "year": 1950
-    }
-  ]
+	"name": "Children's Books",
+	"entries": [
+		{
+			"openingLines": "Where's Papa going with that axe?",
+			"title": "Charlotte's Web",
+			"author": "E.B. White",
+			"year": 1952
+		},
+		{
+			"openingLines": "Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much.",
+			"title": "Harry Potter and the Philosopher's Stone",
+			"author": "J.K. Rowling",
+			"year": 1997
+		},
+		{
+			"openingLines": "Once there were four children whose names were Peter, Susan, Edmund and Lucy.",
+			"title": "The Lion, the Witch and the Wardrobe",
+			"author": "C.S. Lewis",
+			"year": 1950
+		}
+	]
 }

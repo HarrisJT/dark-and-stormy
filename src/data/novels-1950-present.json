@@ -1,23 +1,23 @@
 {
-  "name": "Novels 1950-Present",
-  "entries": [
-    {
-      "openingLines": "Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.",
-      "title": "One Hundred Years of Solitude",
-      "author": "Gabriel García Márquez",
-      "year": 1967
-    },
-    {
-      "openingLines": "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn't know what I was doing in New York.",
-      "title": "The Bell Jar",
-      "author": "Sylvia Plath",
-      "year": 1963
-    },
-    {
-      "openingLines": "If you really want to hear about it, the first thing you'll probably want to know is where I was born, and what my lousy childhood was like...",
-      "title": "The Catcher in the Rye",
-      "author": "J.D. Salinger",
-      "year": 1951
-    }
-  ]
+	"name": "Novels 1950-Present",
+	"entries": [
+		{
+			"openingLines": "Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.",
+			"title": "One Hundred Years of Solitude",
+			"author": "Gabriel García Márquez",
+			"year": 1967
+		},
+		{
+			"openingLines": "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn't know what I was doing in New York.",
+			"title": "The Bell Jar",
+			"author": "Sylvia Plath",
+			"year": 1963
+		},
+		{
+			"openingLines": "If you really want to hear about it, the first thing you'll probably want to know is where I was born, and what my lousy childhood was like...",
+			"title": "The Catcher in the Rye",
+			"author": "J.D. Salinger",
+			"year": 1951
+		}
+	]
 }

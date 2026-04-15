@@ -44,7 +44,11 @@ export default function Prompt({ state, onPassToJudge }: Props) {
 				Read aloud. {guesser.name} guesses title, author, or year.
 			</div>
 
-			<button type="button" className={styles.revealBtn} onClick={onPassToJudge}>
+			<button
+				type="button"
+				className={styles.revealBtn}
+				onClick={onPassToJudge}
+			>
 				Reveal Answer
 			</button>
 		</div>
