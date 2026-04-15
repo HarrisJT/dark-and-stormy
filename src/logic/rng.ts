@@ -12,16 +12,3 @@ export function makeSeededRng(seed: number): RNG {
 		return ((z ^ (z >>> 16)) >>> 0) / 4294967296;
 	};
 }
-
-// Read ?seed= from the URL. Returns a seeded RNG if present, Math.random otherwise.
-// Usage: const rng = getRngFromUrl();
-// Then: ?seed=42 → deterministic game for debugging.
-export function getRngFromUrl(): RNG {
-	if (typeof location === "undefined") return Math.random;
-	const param = new URLSearchParams(location.search).get("seed");
-	if (!param) return Math.random;
-	const seed = Number(param);
-	if (!Number.isFinite(seed)) return Math.random;
-	console.info(`[debug] Using seeded RNG: seed=${seed}`);
-	return makeSeededRng(seed);
-}
