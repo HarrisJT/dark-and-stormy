@@ -1,0 +1,94 @@
+import { loadGenres } from "logic/data";
+import { drawCard as drawCardFromDeck } from "logic/deck";
+import { pickEntry } from "logic/entries";
+import { invariant } from "logic/invariant";
+import { makeSeededRng } from "logic/rng";
+import { advancePlayer, createInitialState } from "logic/game";
+import type { GameState } from "types";
+
+// Load genres once at module init time (Vite bundles them eagerly).
+const allGenres = loadGenres();
+
+export type Action =
+	| { type: "START_GAME"; names: string[]; targetScore: number; seed?: number }
+	| { type: "DRAW" }
+	| { type: "CONTINUE_LOSE_A_TURN" }
+	| { type: "SELECT_GENRE"; genre: string }
+	| { type: "PASS_TO_JUDGE" }
+	| { type: "JUDGE"; correct: boolean }
+	| { type: "PLAY_AGAIN" }
+	| { type: "NEW_GAME" };
+
+export function gameReducer(
+	state: GameState | null,
+	action: Action,
+): GameState | null {
+	switch (action.type) {
+		case "START_GAME": {
+			const rng = action.seed !== undefined ? makeSeededRng(action.seed) : Math.random;
+			return createInitialState(action.names, action.targetScore, rng);
+		}
+
+		case "DRAW": {
+			if (!state) return null;
+			const { card, remaining, reshuffled } = drawCardFromDeck(state.deck);
+			const deckDrawCount = reshuffled ? 1 : state.deckDrawCount + 1;
+			const base = { ...state, deck: remaining, deckDrawCount, currentCard: card };
+
+			if (card.type === "loseATurn") return { ...base, phase: "loseATurn" };
+			if (card.type === "guesserChooses" || card.type === "opponentChooses")
+				return { ...base, phase: "genreSelect" };
+
+			// genre card
+			const genre = card.genre;
+			invariant(genre, "Genre card must have a non-null genre");
+			const { entry, usedEntries } = pickEntry(genre, allGenres, state.usedEntries);
+			return { ...base, currentEntry: entry, currentGenre: genre, usedEntries, phase: "prompt" };
+		}
+
+		case "CONTINUE_LOSE_A_TURN":
+			if (!state) return null;
+			return advancePlayer(state);
+
+		case "SELECT_GENRE": {
+			if (!state) return null;
+			const { entry, usedEntries } = pickEntry(action.genre, allGenres, state.usedEntries);
+			return { ...state, currentEntry: entry, currentGenre: action.genre, usedEntries, phase: "prompt" };
+		}
+
+		case "PASS_TO_JUDGE":
+			if (!state) return null;
+			invariant(state.phase === "prompt", `PASS_TO_JUDGE: expected prompt phase, got "${state.phase}"`);
+			return { ...state, phase: "judge" };
+
+		case "JUDGE": {
+			if (!state) return null;
+			invariant(state.phase === "judge", `JUDGE: expected judge phase, got "${state.phase}"`);
+			if (!action.correct) return advancePlayer(state);
+			const scorer = state.players[state.currentPlayerIndex];
+			invariant(scorer, "currentPlayerIndex must point to a valid player");
+			const newScore = scorer.score + 1;
+			const newPlayers = state.players.map((p, i) =>
+				i === state.currentPlayerIndex ? { ...p, score: newScore } : p,
+			);
+			if (newScore >= state.targetScore)
+				return { ...state, players: newPlayers, phase: "gameOver" };
+			return advancePlayer({ ...state, players: newPlayers });
+		}
+
+		case "PLAY_AGAIN":
+			if (!state) return null;
+			// Always use real randomness -- the seed only applies to the first game.
+			// To replay a seeded game, reload the page with ?seed=N.
+			return createInitialState(
+				state.players.map((p) => p.name),
+				state.targetScore,
+			);
+
+		case "NEW_GAME":
+			return null;
+
+		default:
+			return state;
+	}
+}
