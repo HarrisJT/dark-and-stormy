@@ -1,0 +1,28 @@
+.loseATurn {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	text-align: center;
+}
+
+.heading {
+	font-size: 1.8rem;
+	font-weight: 700;
+	font-family: var(--font-literary);
+}
+
+.message {
+	color: var(--muted);
+	font-size: 1rem;
+}
+
+.continueBtn {
+	background: var(--surface);
+	color: var(--text);
+	border: 1px solid var(--border);
+	padding: 16px 32px;
+	font-size: 1rem;
+}
