@@ -3,3 +3,7 @@ dist
 .env
 *.local
 review/
+.claude/settings.local
+.vscode
+docs/
+scripts/
