@@ -22,13 +22,12 @@ const REQUIRED_FIELDS_BY_PHASE: Record<
 // Call this at the top of every reducer case before reading state fields.
 export function assertTransition(
 	state: GameState,
-	expectedPhase: GamePhase | GamePhase[],
+	expectedPhase: GamePhase,
 	action: string,
 ): asserts state is GameState {
-	const phases = Array.isArray(expectedPhase) ? expectedPhase : [expectedPhase];
 	invariant(
-		phases.includes(state.phase),
-		`${action}: expected phase ${phases.join(" | ")}, got "${state.phase}"`,
+		state.phase === expectedPhase,
+		`${action}: expected phase ${expectedPhase}, got "${state.phase}"`,
 	);
 	const required = REQUIRED_FIELDS_BY_PHASE[state.phase];
 	for (const field of required) {

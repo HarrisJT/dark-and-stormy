@@ -56,17 +56,6 @@ describe("assertTransition", () => {
 		expect(() => assertTransition(state, "prompt", "TEST")).toThrow(/"draw"/);
 	});
 
-	it("accepts an array of valid source phases", () => {
-		const state = baseState({
-			phase: "judge",
-			currentEntry: { openingLines: "x", title: "T", author: "A", year: 2000 },
-			currentGenre: "Poetry",
-		});
-		expect(() =>
-			assertTransition(state, ["prompt", "judge"], "TEST"),
-		).not.toThrow();
-	});
-
 	it("throws when a required field for the phase is null", () => {
 		// prompt phase requires currentEntry and currentGenre
 		const state = baseState({

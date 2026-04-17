@@ -1,11 +1,10 @@
-import type { Entry, GenreData, RNG } from "types";
+import type { Entry, GenreData } from "types";
 import { invariant } from "./invariant";
 
 export function pickEntry(
 	genreName: string,
 	allGenres: GenreData[],
 	usedEntries: Record<string, number[]>,
-	rng: RNG = Math.random,
 ): { entry: Entry; usedEntries: Record<string, number[]> } {
 	const genreData = allGenres.find((g) => g.name === genreName);
 	if (!genreData) throw new Error(`Genre not found: ${genreName}`);
@@ -22,7 +21,7 @@ export function pickEntry(
 		available = entries.map((entry, index) => ({ entry, index }));
 	}
 
-	const pick = available[Math.floor(rng() * available.length)];
+	const pick = available[Math.floor(Math.random() * available.length)];
 	invariant(pick, "available was non-empty but pick was undefined");
 
 	const wasReset = available.length === entries.length && used.size > 0;

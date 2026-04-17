@@ -1,6 +1,6 @@
 import type { RNG } from "types";
 import { describe, expect, it } from "vitest";
-import { loadGenres } from "./data";
+import { allGenres } from "./data";
 import { createDeck, drawCard } from "./deck";
 
 // Tests must be resilient to adding/removing JSON files in src/data/.
@@ -11,14 +11,14 @@ const deterministicRng: RNG = () => 0;
 
 describe("createDeck", () => {
 	it("creates one genre card per discovered genre", () => {
-		const genres = loadGenres();
+		const genres = allGenres;
 		const deck = createDeck(deterministicRng);
 		const genreCards = deck.filter((c) => c.type === "genre");
 		expect(genreCards).toHaveLength(genres.length);
 	});
 
 	it("total deck size equals (genre count + 5 specials)", () => {
-		const genres = loadGenres();
+		const genres = allGenres;
 		const deck = createDeck(deterministicRng);
 		expect(deck).toHaveLength(genres.length + 5);
 	});

@@ -1,7 +1,7 @@
 import type { GenreData } from "types";
 import { z } from "zod";
 
-const EntrySchema = z.object({
+export const EntrySchema = z.object({
 	openingLines: z.string().min(1),
 	title: z.string().min(1),
 	author: z.string().min(1),
@@ -29,10 +29,6 @@ export const allGenres: GenreData[] = Object.values(modules)
 		return result.data as GenreData;
 	})
 	.filter((g): g is GenreData => g !== null);
-
-export function loadGenres(): GenreData[] {
-	return allGenres;
-}
 
 export function getGenreNames(): string[] {
 	return allGenres.map((g) => g.name);

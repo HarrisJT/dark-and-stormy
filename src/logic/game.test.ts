@@ -1,6 +1,6 @@
 import type { RNG } from "types";
 import { describe, expect, it } from "vitest";
-import { loadGenres } from "./data";
+import { allGenres } from "./data";
 import {
 	advancePlayer,
 	applyScore,
@@ -29,7 +29,7 @@ describe("createInitialState", () => {
 	});
 
 	it("creates a full deck (genre count + 5 specials -- no hardcoded 17)", () => {
-		const genres = loadGenres();
+		const genres = allGenres;
 		const state = createInitialState(["Alice", "Bob"], 8, deterministicRng);
 		expect(state.deck).toHaveLength(genres.length + 5);
 	});

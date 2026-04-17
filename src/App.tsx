@@ -1,3 +1,4 @@
+import { installButtonTilt } from "logic/buttonTilt";
 import { allGenres } from "logic/data";
 import { clearSavedState, loadState, saveState } from "logic/storage";
 import { useEffect, useReducer } from "react";
@@ -32,6 +33,8 @@ function loadInitialState(): GameState | null {
 export default function App() {
 	const [state, dispatch] = useReducer(gameReducer, null, loadInitialState);
 
+	useEffect(() => installButtonTilt(), []);
+
 	useEffect(() => {
 		const timerId = window.setTimeout(() => {
 			if (state) {
@@ -56,6 +59,77 @@ export default function App() {
 		dispatch({ type: "PLAY_AGAIN" });
 	}
 
+	function renderPhase() {
+		if (!state) {
+			return (
+				<Setup
+					onStart={(names, targetScore) =>
+						dispatch({
+							type: "START_GAME",
+							names,
+							targetScore,
+							seed: debugSeed !== undefined ? Number(debugSeed) : undefined,
+						})
+					}
+				/>
+			);
+		}
+
+		switch (state.phase) {
+			case "setup":
+				return null;
+			case "draw":
+				return (
+					<Draw
+						state={state}
+						onDraw={() => dispatch({ type: "DRAW" })}
+						deckSize={deckSize}
+					/>
+				);
+			case "loseATurn":
+				return (
+					<LoseATurn
+						state={state}
+						onContinue={() => dispatch({ type: "CONTINUE_LOSE_A_TURN" })}
+					/>
+				);
+			case "genreSelect":
+				return (
+					<GenreSelect
+						state={state}
+						genres={allGenres}
+						onSelect={(genre) => dispatch({ type: "SELECT_GENRE", genre })}
+					/>
+				);
+			case "prompt":
+				return (
+					<Prompt
+						state={state}
+						onPassToJudge={() => dispatch({ type: "PASS_TO_JUDGE" })}
+					/>
+				);
+			case "judge":
+				return (
+					<Judge
+						state={state}
+						onJudge={(correct) => dispatch({ type: "JUDGE", correct })}
+					/>
+				);
+			case "gameOver":
+				return (
+					<GameOver
+						state={state}
+						onPlayAgain={handlePlayAgain}
+						onNewGame={() => dispatch({ type: "NEW_GAME" })}
+					/>
+				);
+			default: {
+				const _exhaustive: never = state.phase;
+				throw new Error(`Unhandled phase: ${_exhaustive}`);
+			}
+		}
+	}
+
 	return (
 		<div className={styles.app}>
 			<header className={styles.header}>
@@ -71,63 +145,7 @@ export default function App() {
 				)}
 			</header>
 
-			{!state && (
-				<Setup
-					onStart={(names, targetScore) =>
-						dispatch({
-							type: "START_GAME",
-							names,
-							targetScore,
-							seed: debugSeed !== undefined ? Number(debugSeed) : undefined,
-						})
-					}
-				/>
-			)}
-
-			{state?.phase === "draw" && (
-				<Draw
-					state={state}
-					onDraw={() => dispatch({ type: "DRAW" })}
-					deckSize={deckSize}
-				/>
-			)}
-
-			{state?.phase === "loseATurn" && (
-				<LoseATurn
-					state={state}
-					onContinue={() => dispatch({ type: "CONTINUE_LOSE_A_TURN" })}
-				/>
-			)}
-
-			{state?.phase === "genreSelect" && (
-				<GenreSelect
-					state={state}
-					genres={allGenres}
-					onSelect={(genre) => dispatch({ type: "SELECT_GENRE", genre })}
-				/>
-			)}
-
-			{state?.phase === "prompt" && (
-				<Prompt
-					state={state}
-					onPassToJudge={() => dispatch({ type: "PASS_TO_JUDGE" })}
-				/>
-			)}
-
-			{state?.phase === "judge" && (
-				<Judge
-					state={state}
-					onJudge={(correct) => dispatch({ type: "JUDGE", correct })}
-				/>
-			)}
-
-			{state?.phase === "gameOver" && (
-				<GameOver
-					state={state}
-					onPlayAgain={handlePlayAgain}
-					onNewGame={() => dispatch({ type: "NEW_GAME" })}
-				/>
-			)}
+			{renderPhase()}
 		</div>
 	);
 }

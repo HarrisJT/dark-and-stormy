@@ -1,8 +1,8 @@
-import { loadGenres } from "logic/data";
+import { allGenres } from "logic/data";
 import { describe, expect, it } from "vitest";
 import { gameReducer } from "./reducer";
 
-const genres = loadGenres();
+const genres = allGenres;
 const twoPlayers = ["Alice", "Bob"];
 
 const mockEntry = {
