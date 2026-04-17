@@ -7,6 +7,7 @@ import path from "path";
 // but value imports (import { FOO } from "types") do. We alias the src dir
 // so all bare imports matching tsconfig's baseUrl: "./src" resolve correctly.
 export default defineConfig({
+	base: process.env.GITHUB_PAGES === "true" ? "/dark-and-stormy/" : "/",
 	plugins: [react()],
 	resolve: {
 		alias: {
