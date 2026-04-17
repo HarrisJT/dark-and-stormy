@@ -2,10 +2,46 @@
 	"name": "Short Stories",
 	"entries": [
 		{
-			"openingLines": "It was a dark and stormy night; the rain fell in torrents — except at occasional intervals, when it was checked by a violent gust of wind which swept up the streets.",
-			"title": "Paul Clifford",
-			"author": "Edward Bulwer-Lytton",
-			"year": 1830
+			"openingLines": "TRUE! — nervous — very, very dreadfully nervous I had been and am; but why will you say that I am mad?",
+			"title": "The Tell-Tale Heart",
+			"author": "Edgar Allan Poe",
+			"year": 1843
+		},
+		{
+			"openingLines": "During the whole of a dull, dark, and soundless day in the autumn of the year, when the clouds hung oppressively low in the heavens, I had been passing alone, on horseback, through a singularly dreary tract of country; and at length found myself, as the shades of the evening drew on, within view of the melancholy House of Usher.",
+			"title": "The Fall of the House of Usher",
+			"author": "Edgar Allan Poe",
+			"year": 1839
+		},
+		{
+			"openingLines": "The morning of June 27th was clear and sunny, with the fresh warmth of a full-summer day; the flowers were blossoming profusely and the grass was richly green.",
+			"title": "The Lottery",
+			"author": "Shirley Jackson",
+			"year": 1948
+		},
+		{
+			"openingLines": "The hills across the dry valley of the Ebro were long and white. On this side there was no shade and no trees and the station was between two lines of rails in the sun.",
+			"title": "Hills Like White Elephants",
+			"author": "Ernest Hemingway",
+			"year": 1927
+		},
+		{
+			"openingLines": "The grandmother didn't want to go to Florida.",
+			"title": "A Good Man is Hard to Find",
+			"author": "Flannery O'Connor",
+			"year": 1953
+		},
+		{
+			"openingLines": "In the kitchen, he poured another drink and looked at the bedroom suite in his front yard. The mattress was on the lawn. A nightstand and reading lamp stood beside it. His TV set was next to that, a doll-sized rocking chair placed atop the TV set.",
+			"title": "Why Don't You Dance?",
+			"author": "Raymond Carver",
+			"year": 1981
+		},
+		{
+			"openingLines": "It is very seldom that mere ordinary people like John and myself secure ancestral halls for the summer. A colonial mansion, a hereditary estate, I would say a haunted house, and reach the height of romantic felicity—but that would be asking too much of fate!",
+			"title": "The Yellow Wallpaper",
+			"author": "Charlotte Perkins Gilman",
+			"year": 1892
 		},
 		{
 			"openingLines": "The thousand injuries of Fortunato I had borne as I best could, but when he ventured upon insult I vowed revenge.",
@@ -14,10 +50,64 @@
 			"year": 1846
 		},
 		{
-			"openingLines": "The morning of June 27th was clear and sunny, with the fresh warmth of a full-summer day.",
-			"title": "The Lottery",
-			"author": "Shirley Jackson",
-			"year": 1948
+			"openingLines": "When Miss Emily Grierson died, our whole town went to her funeral: the men through a sort of respectful affection for a fallen monument, the women mostly out of curiosity to see the inside of her house, which no one save an old manservant—a combined gardener and cook—had seen in at least ten years.",
+			"title": "A Rose for Emily",
+			"author": "William Faulkner",
+			"year": 1930
+		},
+		{
+			"openingLines": "She was one of those pretty and charming girls who are sometimes, as if by a mistake of destiny, born in a family of clerks.",
+			"title": "The Necklace",
+			"author": "Guy de Maupassant",
+			"year": 1884
+		},
+		{
+			"openingLines": "Without, the night was cold and wet, but in the small parlour of Laburnam Villa the blinds were drawn and the fire burned brightly.",
+			"title": "The Monkey's Paw",
+			"author": "W. W. Jacobs",
+			"year": 1902
+		},
+		{
+			"openingLines": "A man stood upon a railroad bridge in northern Alabama, looking down into the swift water twenty feet below.",
+			"title": "An Occurrence at Owl Creek Bridge",
+			"author": "Ambrose Bierce",
+			"year": 1890
+		},
+		{
+			"openingLines": "This blind man, an old friend of my wife's, he was on his way to spend the night. His wife had died. So he was visiting the dead wife's relatives in Connecticut. He called my wife from his in-laws'. Arrangements were made. He would come by train, a five-hour trip, and my wife would meet him at the station. She hadn't seen him since she worked for him one summer in Seattle ten years ago.",
+			"title": "Cathedral",
+			"author": "Raymond Carver",
+			"year": 1981
+		},
+		{
+			"openingLines": "Her name was Connie. She was fifteen and she had a quick nervous giggling habit of craning her neck to glance into mirrors, or checking other people's faces to make sure her own was all right.",
+			"title": "Where Are You Going, Where Have You Been?",
+			"author": "Joyce Carol Oates",
+			"year": 1966
+		},
+		{
+			"openingLines": "The door of Henry's lunchroom opened and two men came in. They sat down at the counter.",
+			"title": "The Killers",
+			"author": "Ernest Hemingway",
+			"year": 1927
+		},
+		{
+			"openingLines": "I am a rather elderly man. The nature of my avocations, for the last thirty years, has brought me into more than ordinary contact with what would seem an interesting and somewhat singular set of men, of whom, as yet, nothing, that I know of, has ever been written — I mean, the law-copyists, or scriveners.",
+			"title": "Bartleby, the Scrivener",
+			"author": "Herman Melville",
+			"year": 1853
+		},
+		{
+			"openingLines": "One dollar and eighty-seven cents. That was all. And sixty cents of it was in pennies.",
+			"title": "The Gift of the Magi",
+			"author": "O. Henry",
+			"year": 1905
+		},
+		{
+			"openingLines": "North Richmond Street, being blind, was a quiet street except at the hour when the Christian Brothers' School set the boys free. An uninhabited house of two storeys stood at the blind end, detached from its neighbours in a square ground. The other houses of the street, conscious of decent lives within them, gazed at one another with brown imperturbable faces.",
+			"title": "Araby",
+			"author": "James Joyce",
+			"year": 1914
 		}
 	]
 }

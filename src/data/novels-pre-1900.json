@@ -2,22 +2,250 @@
 	"name": "Novels Pre-1900",
 	"entries": [
 		{
-			"openingLines": "Call me Ishmael.",
-			"title": "Moby-Dick",
-			"author": "Herman Melville",
-			"year": 1851
+			"openingLines": "It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.",
+			"title": "Pride and Prejudice",
+			"author": "Jane Austen",
+			"year": 1813
 		},
 		{
-			"openingLines": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness...",
-			"title": "A Tale of Two Cities",
-			"author": "Charles Dickens",
-			"year": 1859
+			"openingLines": "There was no possibility of taking a walk that day.",
+			"title": "Jane Eyre",
+			"author": "Charlotte Brontë",
+			"year": 1847
+		},
+		{
+			"openingLines": "1801 – I have just returned from a visit to my landlord – the solitary neighbour that I shall be troubled with.",
+			"title": "Wuthering Heights",
+			"author": "Emily Brontë",
+			"year": 1847
+		},
+		{
+			"openingLines": "Call me Ishmael.",
+			"title": "Moby Dick",
+			"author": "Herman Melville",
+			"year": 1851
 		},
 		{
 			"openingLines": "Whether I shall turn out to be the hero of my own life, or whether that station will be held by anybody else, these pages must show.",
 			"title": "David Copperfield",
 			"author": "Charles Dickens",
 			"year": 1850
+		},
+		{
+			"openingLines": "My father's family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip.",
+			"title": "Great Expectations",
+			"author": "Charles Dickens",
+			"year": 1861
+		},
+		{
+			"openingLines": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way - in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+			"title": "A Tale of Two Cities",
+			"author": "Charles Dickens",
+			"year": 1859
+		},
+		{
+			"openingLines": "Happy families are all alike; every unhappy family is unhappy in its own way.",
+			"title": "Anna Karenina",
+			"author": "Leo Tolstoy",
+			"year": 1877
+		},
+		{
+			"openingLines": "\"Well, Prince, so Genoa and Lucca are now just family estates of the Buonapartes....\"",
+			"title": "War and Peace",
+			"author": "Leo Tolstoy",
+			"year": 1869
+		},
+		{
+			"openingLines": "On an exceptionally hot evening early in July a young man came out of the garret in which he lodged in S. Place and walked slowly, as though in hesitation, towards K. bridge.",
+			"title": "Crime and Punishment",
+			"author": "Fyodor Dostoevsky",
+			"year": 1866
+		},
+		{
+			"openingLines": "Alexei Fyodorovich Karamazov was the third son of Fyodor Pavlovich Karamazov, a landowner well known in our district in his own day, and still remembered among us owing to his gloomy and tragic death, which happened thirteen years ago, and which I shall describe in its proper place.",
+			"title": "The Brothers Karamazov",
+			"author": "Fyodor Dostoevsky",
+			"year": 1880
+		},
+		{
+			"openingLines": "Towards the end of November, during a thaw, at nine o'clock one morning, a train on the Warsaw and Petersburg railway was approaching the latter city at full speed.",
+			"title": "The Idiot",
+			"author": "Fyodor Dostoevsky",
+			"year": 1869
+		},
+		{
+			"openingLines": "In 1815, M. Charles-François-Bienvenu Myriel was Bishop of D—— He was an old man of about seventy-five years of age; he had occupied the see of D—— since 1806.",
+			"title": "Les Misérables",
+			"author": "Victor Hugo",
+			"year": 1862
+		},
+		{
+			"openingLines": "A few years ago, while visiting, or rather, rummaging about Notre-Dame, the author of this book found, in an obscure nook of one of the towers, the following word, engraved by hand upon the wall: ANANKE.",
+			"title": "The Hunchback of Notre-Dame",
+			"author": "Victor Hugo",
+			"year": 1831
+		},
+		{
+			"openingLines": "On the 24th of February, 1815, the look-out at Notre-Dame de la Garde signalled the three-master, the Pharaon from Smyrna, Trieste, and Naples.",
+			"title": "The Count of Monte Cristo",
+			"author": "Alexandre Dumas",
+			"year": 1844
+		},
+		{
+			"openingLines": "\"While the present century was in its teens, and on one sunshiny morning in June, there drove up to the great iron gate of Miss Pinkerton's academy for young ladies, on Chiswick Mall, a large family coach, with two fat horses in blazing harness, driven by a fat coachman in a three-cornered hat and wig, at the rate of four miles an hour.\"",
+			"title": "Vanity Fair",
+			"author": "William Makepeace Thackeray",
+			"year": 1848
+		},
+		{
+			"openingLines": "A throng of bearded men, in sad-colored garments, and gray, steeple-crowned hats, intermixed with women, some wearing hoods and others bareheaded, was assembled in front of a wooden edifice, the door of which was heavily timbered with oak, and studded with iron spikes.",
+			"title": "The Scarlet Letter",
+			"author": "Nathaniel Hawthorne",
+			"year": 1850
+		},
+		{
+			"openingLines": "Miss Brooke had that kind of beauty which seems to be thrown into relief by poor dress.",
+			"title": "Middlemarch",
+			"author": "George Eliot",
+			"year": 1872
+		},
+		{
+			"openingLines": "\"A wide plain, where the broadening Floss hurries on between its green banks to the sea, and the loving tide, rushing to meet it, checks its passage with an impetuous embrace.\"",
+			"title": "The Mill on the Floss",
+			"author": "George Eliot",
+			"year": 1860
+		},
+		{
+			"openingLines": "When Farmer Oak smiled, the corners of his mouth spread till they were within an unimportant distance of his ears, his eyes were reduced to chinks, and diverging wrinkles appeared round them, extending upon his countenance like the rays in a rudimentary sketch of the rising sun.",
+			"title": "Far from the Madding Crowd",
+			"author": "Thomas Hardy",
+			"year": 1874
+		},
+		{
+			"openingLines": "On an evening in the latter part of May a middle-aged man was walking homeward from Shaston to the village of Marlott, in the adjoining Vale of Blakemore or Blackmoor.",
+			"title": "Tess of the d'Urbervilles",
+			"author": "Thomas Hardy",
+			"year": 1891
+		},
+		{
+			"openingLines": "The schoolmaster was leaving the village, and everybody seemed sorry.",
+			"title": "Jude the Obscure",
+			"author": "Thomas Hardy",
+			"year": 1895
+		},
+		{
+			"openingLines": "One evening of late summer, before the nineteenth century had reached one-third of its span, a young man and woman, the latter carrying a child, were approaching the large village of Weydon-Priors, in Upper Wessex, on foot.",
+			"title": "The Mayor of Casterbridge",
+			"author": "Thomas Hardy",
+			"year": 1886
+		},
+		{
+			"openingLines": "Emma Woodhouse, handsome, clever, and rich, with a comfortable home and happy disposition, seemed to unite some of the best blessings of existence; and had lived nearly twenty-one years in the world with very little to distress or vex her.",
+			"title": "Emma",
+			"author": "Jane Austen",
+			"year": 1816
+		},
+		{
+			"openingLines": "No one who had ever seen Catherine Morland in her infancy, would have supposed her born to be a heroine.",
+			"title": "Northanger Abbey",
+			"author": "Jane Austen",
+			"year": 1817
+		},
+		{
+			"openingLines": "\"The family of Dashwood had long been settled in Sussex.\"",
+			"title": "Sense and Sensibility",
+			"author": "Jane Austen",
+			"year": 1811
+		},
+		{
+			"openingLines": "Sir Walter Elliot, of Kellynch Hall, in Somersetshire, was a man who, for his own amusement, never took up any book but the Baronetage; there he found occupation for an idle hour, and consolation in a distressed one; there his faculties were roused into admiration and respect, by contemplating the limited remnant of the earliest patents; there any unwelcome sensations, arising from domestic affairs, changed naturally into pity and contempt as he turned over the almost endless creations of the last century.",
+			"title": "Persuasion",
+			"author": "Jane Austen",
+			"year": 1817
+		},
+		{
+			"openingLines": "\"You don't know about me without you have read a book by the name of The Adventures of Tom Sawyer; but that ain't no matter.\"",
+			"title": "The Adventures of Huckleberry Finn",
+			"author": "Mark Twain",
+			"year": 1884
+		},
+		{
+			"openingLines": "\"Tom!\"\n\nNo answer.\n\n\"Tom!\"\n\nNo answer.\n\n\"What's gone with that boy, I wonder? You Tom!\"",
+			"title": "The Adventures of Tom Sawyer",
+			"author": "Mark Twain",
+			"year": 1876
+		},
+		{
+			"openingLines": "London. Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather.",
+			"title": "Bleak House",
+			"author": "Charles Dickens",
+			"year": 1853
+		},
+		{
+			"openingLines": "Among other public buildings in a certain town, which for many reasons it will be prudent to refrain from mentioning, and to which I will assign no fictitious name, there is one anciently common to most towns, great or small: to wit, a workhouse; and in this workhouse was born; on a day and date which I need not trouble myself to repeat, inasmuch as it can be of no possible consequence to the reader, in this stage of the business at all events; the item of mortality whose name is prefixed to the head of this chapter.",
+			"title": "Oliver Twist",
+			"author": "Charles Dickens",
+			"year": 1838
+		},
+		{
+			"openingLines": "Madame Vauquer, née de Conflans, is an elderly person, who for the past forty years has kept a lodging-house in the Rue Neuve-Sainte-Geneviève, in the district that lies between the Latin Quarter and the Faubourg Saint-Marcel.",
+			"title": "Père Goriot",
+			"author": "Honoré de Balzac",
+			"year": 1835
+		},
+		{
+			"openingLines": "The little town of Verrières may be regarded as one of the most attractive in the Franche-Comté. Its white houses with their high-pitched roofs of red tiles are spread over the slope of a hill, the slightest contours of which are indicated by clumps of sturdy fir trees.",
+			"title": "The Red and the Black",
+			"author": "Stendhal",
+			"year": 1830
+		},
+		{
+			"openingLines": "\"We were in class when the headmaster came in, followed by a \"new fellow,\" not wearing the school uniform, and a school servant carrying a large desk.\"",
+			"title": "Madame Bovary",
+			"author": "Gustave Flaubert",
+			"year": 1857
+		},
+		{
+			"openingLines": "On the 15th of September, 1840, at six o'clock in the morning, the Ville-de-Montereau, just about to start, was sending up great whirls of smoke before the Quai Saint-Bernard.",
+			"title": "Sentimental Education",
+			"author": "Gustave Flaubert",
+			"year": 1869
+		},
+		{
+			"openingLines": "You must go back with me to the autumn of 1827. My situation at that time was as follows:— I was the eldest son of a gentleman farmer in —shire, and my mother being dead, and my sister considerably younger than I, our household was managed by my aunt—a woman of masculine strength of mind, and active habits, both of body and mind.",
+			"title": "The Tenant of Wildfell Hall",
+			"author": "Anne Brontë",
+			"year": 1848
+		},
+		{
+			"openingLines": "I was born in the Year 1632, in the City of York, of a good Family, tho' not of that Country, my Father being a Foreigner of Bremen, who settled first at Hull; He got a good Estate by Merchandise, and leaving off his Trade, lived afterward at York, from whence he had married my Mother, whose Relations were named Robinson, a very good Family in that Country, and from whom I was called Robinson Kreutznaer; but by the usual Corruption of Words in England, we are now called, nay we call our selves, and write our Name Crusoe, and so my Companions always call'd me.",
+			"title": "Robinson Crusoe",
+			"author": "Daniel Defoe",
+			"year": 1719
+		},
+		{
+			"openingLines": "I am extremely concerned, my dearest friend, for the disturbances that have happened in your family. I know how it must hurt you to become the subject of the public talk: and yet, upon an occasion so generally known, it is impossible but that whatever relates to a young lady, whose distinguished merits have made her the public care, should engage every body's attention.",
+			"title": "Clarissa. Or, The History of a Young Lady",
+			"author": "Samuel Richardson",
+			"year": 1748
+		},
+		{
+			"openingLines": "You will rejoice to hear that no disaster has accompanied the commencement of an enterprise which you have regarded with such evil forebodings.",
+			"title": "Frankenstein",
+			"author": "Mary Shelley",
+			"year": 1818
+		},
+		{
+			"openingLines": "\"The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden, there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn.\"",
+			"title": "The Picture of Dorian Gray",
+			"author": "Oscar Wilde",
+			"year": 1890
+		},
+		{
+			"openingLines": "\"Let the reader be introduced to Lady Carbury, upon whose character and doings much will depend of whatever interest these pages may have, as she sits at her writing-table in her own room in her own house in Welbeck Street.\"",
+			"title": "The Way We Live Now",
+			"author": "Anthony Trollope",
+			"year": 1875
 		}
 	]
 }

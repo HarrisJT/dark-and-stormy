@@ -2,22 +2,94 @@
 	"name": "Shakespeare",
 	"entries": [
 		{
-			"openingLines": "Two households, both alike in dignity, in fair Verona, where we lay our scene...",
-			"title": "Romeo and Juliet",
-			"author": "William Shakespeare",
-			"year": 1597
-		},
-		{
-			"openingLines": "Who's there?",
+			"openingLines": "BERNARDO: Who's there?\nFRANCISCO: Nay, answer me: stand, and unfold yourself.\nBERNARDO: Long live the king!",
 			"title": "Hamlet",
 			"author": "William Shakespeare",
 			"year": 1601
 		},
 		{
-			"openingLines": "If music be the food of love, play on...",
+			"openingLines": "FIRST WITCH: When shall we three meet again / In thunder, lightning, or in rain?\nSECOND WITCH: When the hurlyburly's done, / When the battle's lost and won.\nTHIRD WITCH: That will be ere the set of sun.",
+			"title": "Macbeth",
+			"author": "William Shakespeare",
+			"year": 1606
+		},
+		{
+			"openingLines": "SAMPSON: Gregory, o' my word, we'll not carry coals.\nGREGORY: No, for then we should be colliers.\nSAMPSON: I mean, an we be in choler, we'll draw.\nGREGORY: Ay, while you live, draw your neck out o' the collar.",
+			"title": "Romeo and Juliet",
+			"author": "William Shakespeare",
+			"year": 1595
+		},
+		{
+			"openingLines": "RODERIGO: Tush! never tell me; I take it much unkindly That thou, Iago, who hast had my purse As if the strings were thine, shouldst know of this.",
+			"title": "Othello",
+			"author": "William Shakespeare",
+			"year": 1604
+		},
+		{
+			"openingLines": "THESEUS: Now, fair Hippolyta, our nuptial hour Draws on apace; four happy days bring in Another moon: but, O, methinks, how slow This old moon wanes! she lingers my desires, Like to a step-dame or a dowager Long withering out a young man's revenue.",
+			"title": "A Midsummer Night's Dream",
+			"author": "William Shakespeare",
+			"year": 1596
+		},
+		{
+			"openingLines": "MASTER: Boatswain!\nBOATSWAIN: Here, master: what cheer?\nMASTER: Good, speak to the mariners: fall to't, yarely, or we run ourselves aground: bestir, bestir.",
+			"title": "The Tempest",
+			"author": "William Shakespeare",
+			"year": 1611
+		},
+		{
+			"openingLines": "LEONATO: I learn in this letter that Don Pedro of Arragon comes this night to Messina.",
+			"title": "Much Ado About Nothing",
+			"author": "William Shakespeare",
+			"year": 1599
+		},
+		{
+			"openingLines": "KENT: I thought the king had more affected the Duke of Albany than Cornwall.\nGLOUCESTER: It did always seem so to us: but now, in the division of the kingdom, it appears not which of the dukes he values most; for equalities are so weighed, that curiosity in neither can make choice of either's moiety.\nKENT: Is not this your son, my lord?",
+			"title": "King Lear",
+			"author": "William Shakespeare",
+			"year": 1606
+		},
+		{
+			"openingLines": "ANTONIO: In sooth, I know not why I am so sad: It wearies me; you say it wearies you; But how I caught it, found it, or came by it, What stuff 'tis made of, whereof it is born, I am to learn; And such a want-wit sadness makes of me, That I have much ado to know myself.",
+			"title": "The Merchant of Venice",
+			"author": "William Shakespeare",
+			"year": 1597
+		},
+		{
+			"openingLines": "DUKE: If music be the food of love, play on; Give me excess of it, that, surfeiting, The appetite may sicken, and so die.",
 			"title": "Twelfth Night",
 			"author": "William Shakespeare",
 			"year": 1602
+		},
+		{
+			"openingLines": "CANTERBURY: My lord, I'll tell you; that self bill is urged, Which in the eleventh year of the last king's reign Was like, and had indeed against us pass'd, But that the scambling and unquiet time Did push it out of farther question.",
+			"title": "Henry V",
+			"author": "William Shakespeare",
+			"year": 1599
+		},
+		{
+			"openingLines": "FLAVIUS: Hence! home, you idle creatures get you home: Is this a holiday? what! know you not, Being mechanical, you ought not walk Upon a labouring day without the sign Of your profession? Speak, what trade art thou?",
+			"title": "Julius Caesar",
+			"author": "William Shakespeare",
+			"year": 1599
+		},
+		{
+			"openingLines": "LUCENTIO: Tranio, since for the great desire I had\nTo see fair Padua, nursery of arts,\nI am arrived for fruitful Lombardy,\nThe pleasant garden of great Italy;\nAnd by my father's love and leave am arm'd\nWith his good will and thy good company,\nMy trusty servant, well approved in all,\nHere let us breathe and haply institute\nA course of learning and ingenious studies.",
+			"title": "The Taming of the Shrew",
+			"author": "William Shakespeare",
+			"year": 1592
+		},
+		{
+			"openingLines": "ORLANDO: As I remember, Adam, it was upon this fashion bequeathed me by will but poor a thousand crowns, and, as thou sayest, charged my brother, on his blessing, to breed me well: and there begins my sadness.",
+			"title": "As You Like It",
+			"author": "William Shakespeare",
+			"year": 1599
+		},
+		{
+			"openingLines": "PHILO: Nay, but this dotage of our general's o'erflows the measure: those his goodly eyes, that o'er the files and musters of the war have glow'd like plated Mars, now bend, now turn, the office and devotion of their view upon a tawny front: his captain's heart, which in the scuffles of great fights hath burst the buckles on his breast, reneges all temper, and is become the bellows and the fan to cool a gipsy's lust.",
+			"title": "Antony and Cleopatra",
+			"author": "William Shakespeare",
+			"year": 1607
 		}
 	]
 }

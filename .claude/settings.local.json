@@ -18,7 +18,20 @@
       "Bash(mv Draw.tsx Draw/)",
       "Bash(mv Draw.test.tsx Draw/)",
       "Bash(mv Draw.module.css Draw/)",
-      "Bash(mv GameOver.tsx GameOver/)"
+      "Bash(mv GameOver.tsx GameOver/)",
+      "Bash(npx --yes tsx scripts/api-test.ts)",
+      "Bash(npx --version)",
+      "Bash(npx tsx@latest scripts/api-test.ts)",
+      "WebFetch(domain:standardebooks.org)",
+      "WebFetch(domain:en.wikiquote.org)",
+      "Bash(npx tsx@latest scripts/api-test-v2.ts)",
+      "Bash(npx tsx@latest scripts/api-test-v3.ts)",
+      "Bash(node -e 'JSON.parse\\(require\\('\\\\''fs'\\\\''\\).readFileSync\\('\\\\''__TRACKED_VAR__'\\\\'','\\\\''utf8'\\\\''\\)\\)')",
+      "Bash(npx tsx *)",
+      "Bash(gh --version)",
+      "Bash(winget install *)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" --version)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth status)"
     ],
     "defaultMode": "bypassPermissions"
   }

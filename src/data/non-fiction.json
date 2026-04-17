@@ -2,22 +2,214 @@
 	"name": "Non-Fiction",
 	"entries": [
 		{
-			"openingLines": "The village of Holcomb stands on the high wheat plains of western Kansas, a lonesome area that other Kansans call 'out there.'",
-			"title": "In Cold Blood",
-			"author": "Truman Capote",
-			"year": 1966
+			"openingLines": "There’s a photo on my wall of a woman I’ve never met, its left corner torn and patched together with tape.",
+			"title": "The Immortal Life of Henrietta Lacks",
+			"author": "Rebecca Skloot",
+			"year": 2010
 		},
 		{
-			"openingLines": "We were somewhere around Barstow on the edge of the desert when the drugs began to take hold.",
-			"title": "Fear and Loathing in Las Vegas",
-			"author": "Hunter S. Thompson",
-			"year": 1971
+			"openingLines": "Jim Williams was giving his Christmas party for the twenty-fifth year in a row, and it had become one of the events of the Savannah social season.",
+			"title": "Midnight in the Garden of Good and Evil",
+			"author": "John Berendt",
+			"year": 1994
 		},
 		{
-			"openingLines": "On August 6, 1945, at fifteen minutes past eight in the morning, Japanese time, at the moment when the atomic bomb flashed above Hiroshima...",
-			"title": "Hiroshima",
-			"author": "John Hersey",
-			"year": 1946
+			"openingLines": "Gloucester, Massachusetts, is a town of twenty-eight thousand people that is squeezed into the rocky coastline of Cape Ann.",
+			"title": "The Perfect Storm",
+			"author": "Sebastian Junger",
+			"year": 1997
+		},
+		{
+			"openingLines": "Straddling the top of the world, one foot in China and the other in Nepal, I cleared the ice from my oxygen mask, hunched a shoulder against the wind, and stared absently down at the vastness of Tibet.",
+			"title": "Into Thin Air",
+			"author": "Jon Krakauer",
+			"year": 1997
+		},
+		{
+			"openingLines": "My father and mother should have stayed in New York where they met and married and where I was born. Instead, my discontent with their lives in Brooklyn, they returned to Ireland when I was four, my brother Malachy three, the twins Oliver and Eugene barely one, and my sister Margaret dead and gone.",
+			"title": "Angela's Ashes",
+			"author": "Frank McCourt",
+			"year": 1996
+		},
+		{
+			"openingLines": "Anyone who travels very much on airlines in the United States soon gets to know the voice of the airline pilot… coming over the intercom… with a particular drawl, a particular folksiness, a particular down-home calmness that is so exaggerated it begins to parody itself (nevertheless! —it’s reassuring)…",
+			"title": "The Right Stuff",
+			"author": "Tom Wolfe",
+			"year": 1979
+		},
+		{
+			"openingLines": "The order to abandon ship was given at 5 P.M. on the afternoon of October 27, 1915. The words were spoken quietly by Ernest Shackleton, and they were heard by twenty-seven men whose lives depended upon the ice-imprisoned hulk that was being slowly crushed in the Weddell Sea.",
+			"title": "Endurance",
+			"author": "Alfred Lansing",
+			"year": 1959
+		},
+		{
+			"openingLines": "It was sometime early in 1986, the first year of the decline of my firm, Salomon Brothers. Our chairman, John Gutfreund, left his desk at the head of the trading floor and went for a walk. At any given moment on the trading floor billions of dollars were being risked by bond traders.",
+			"title": "Liar's Poker",
+			"author": "Michael Lewis",
+			"year": 1989
+		},
+		{
+			"openingLines": "I wrote this book because I fell in love with a story.",
+			"title": "Moneyball",
+			"author": "Michael Lewis",
+			"year": 2003
+		},
+		{
+			"openingLines": "A well-known scientist (some say it was Bertrand Russell) once gave a public lecture on astronomy. He described how the earth orbits around the sun and how the sun, in turn, orbits around the center of a vast collection of stars called our galaxy.",
+			"title": "A Brief History of Time",
+			"author": "Stephen Hawking",
+			"year": 1988
+		},
+		{
+			"openingLines": "\"Polar exploration is at once the cleanest and most isolated way of having a bad time which has been devised.\"",
+			"title": "The Worst Journey in the World",
+			"author": "Apsley Cherry-Garrard",
+			"year": 1922
+		},
+		{
+			"openingLines": "The men of Easy Company, 506th Parachute Infantry Regiment, 101st Airborne Division, U.S. Army, came from different backgrounds, different parts of the country.",
+			"title": "Band of Brothers",
+			"author": "Stephen E. Ambrose",
+			"year": 1992
+		},
+		{
+			"openingLines": "A suitable starting point from which to compare historical developments on the different continents is around 11,000 B.C. This date corresponds approximately to the beginnings of village life in a few parts of the world, the first undisputed peopling of the Americas, the end of the Pleistocene Era and last Ice Age, and the start of what geologists term the Recent Era.",
+			"title": "Guns, Germs, and Steel",
+			"author": "Jared Diamond",
+			"year": 1997
+		},
+		{
+			"openingLines": "I am writing these words in a garden, which means I find myself in a place at once as old as agriculture and as new as the suburbanization of America.",
+			"title": "The Botany of Desire",
+			"author": "Michael Pollan",
+			"year": 2001
+		},
+		{
+			"openingLines": "Once I stood on the bank of a rice paddy in rural Sichuan Province, and a lean and aging Chinese peasant, wearing a faded forty-year-old blue jacket issued by the Mao government in the early years of the Revolution, stood knee deep in water and apropos of absolutely nothing shouted defiantly at me, “We Chinese invented many things!”.",
+			"title": "Salt: A World History",
+			"author": "Mark Kurlansky",
+			"year": 2002
+		},
+		{
+			"openingLines": "Air-conditioned, odorless, illuminated by buzzing fluorescent tubes, the American supermarket doesn't present itself as having very much to do with Nature. And yet what is this place if not a landscape (manmade, it's true) teeming with plants and animals?",
+			"title": "The Omnivore's Dilemma",
+			"author": "Michael Pollan",
+			"year": 2006
+		},
+		{
+			"openingLines": "In 1938, near the end of a decade of monumental turmoil, the year's number-one newsmaker was not Franklin Delano Roosevelt, Hitler, or Mussolini. It wasn't Pope Pius XI, nor was it Lou Gehrig, Howard Hughes, or Clark Gable. The subject of the most newspaper column inches in 1938 wasn't even a person. It was an undersized, crooked-legged racehorse named Seabiscuit.",
+			"title": "Seabiscuit",
+			"author": "Laura Hillenbrand",
+			"year": 2001
+		},
+		{
+			"openingLines": "In the predawn darkness of August 26, 1929, in the fading days of the Prohibition era, a young man slipped through the window of a Torrance, California, house and raced away into the night.",
+			"title": "Unbroken",
+			"author": "Laura Hillenbrand",
+			"year": 2010
+		},
+		{
+			"openingLines": "On a cold, drizzly, and distressingly ordinary Tuesday morning in October 1933, Joe Rantz sat on a wooden dock in the middle of Lake Washington, waiting for a ride he wasn't sure would come.",
+			"title": "The Boys in the Boat",
+			"author": "Daniel James Brown",
+			"year": 2013
+		},
+		{
+			"openingLines": "I left my wife and moved to Stockholm. We had been together for four years; for the first two I had loved her blindly, for the next two I had forced myself to love her.",
+			"title": "A Man in Love",
+			"author": "Karl Ove Knausgård",
+			"year": 2009
+		},
+		{
+			"openingLines": "I come from a country that was created at midnight. When I almost died it was just after midday.",
+			"title": "I Am Malala",
+			"author": "Malala Yousafzai",
+			"year": 2013
+		},
+		{
+			"openingLines": "For a guy with a lot of questions, I wasn't having much luck getting answers.",
+			"title": "Born to Run",
+			"author": "Christopher McDougall",
+			"year": 2009
+		},
+		{
+			"openingLines": "In April, millions of tiny flowers spread over the blackjack hills and vast prairies in the Osage territory of Oklahoma. There are Johnny-­jump-­ups and spring beauties and little bluets. The Osage writer John Joseph Mathews observed that the galaxy of petals makes it look as if the \"gods had left confetti.\"",
+			"title": "Killers of the Flower Moon",
+			"author": "David Grann",
+			"year": 2017
+		},
+		{
+			"openingLines": "On a clear, breezy afternoon in February 2004, the greatest hitter in baseball walked to the plate to face the greatest pitcher in softball.",
+			"title": "The Sports Gene",
+			"author": "David Epstein",
+			"year": 2013
+		},
+		{
+			"openingLines": "I was up before the others, before the birds, before the sun.",
+			"title": "Shoe Dog",
+			"author": "Phil Knight",
+			"year": 2016
+		},
+		{
+			"openingLines": "I flipped through the CT scan images, the diagnosis obvious: the lungs were matted with innumerable tumors, the spine deformed, a full lobe of the liver obliterated.",
+			"title": "When Breath Becomes Air",
+			"author": "Paul Kalanithi",
+			"year": 2016
+		},
+		{
+			"openingLines": "On the morning of May 19, 2004, I met Carla Reed, a thirty-year-old kindergarten teacher from Ipswich, Massachusetts, a mother of three young children.",
+			"title": "The Emperor of All Maladies",
+			"author": "Siddhartha Mukherjee",
+			"year": 2010
+		},
+		{
+			"openingLines": "My strongest memory is not a memory. It’s something I imagined, then came to remember as if it had happened.",
+			"title": "Educated",
+			"author": "Tara Westover",
+			"year": 2018
+		},
+		{
+			"openingLines": "When I was a kid, my aspirations were simple. I wanted a dog. I wanted a house that had stairs in it—two floors for one family.",
+			"title": "Becoming",
+			"author": "Michelle Obama",
+			"year": 2018
+		},
+		{
+			"openingLines": "Hold out your hands and let me lay upon them a sheaf of freshly picked sweetgrass, still warm from the sun and smelling of vanilla and summer and you upstate meadows.",
+			"title": "Braiding Sweetgrass",
+			"author": "Robin Wall Kimmerer",
+			"year": 2013
+		},
+		{
+			"openingLines": "I was sitting in a taxi, wondering if I had overdressed for the evening, when I looked out the window and saw Mom rooting through a Dumpster.",
+			"title": "The Glass Castle",
+			"author": "Jeannette Walls",
+			"year": 2005
+		},
+		{
+			"openingLines": "My name is J. D. Vance, and I think I should start with a confession: I find the existence of the book you hold in your hands somewhat absurd.",
+			"title": "Hillbilly Elegy",
+			"author": "J.D. Vance",
+			"year": 2016
+		},
+		{
+			"openingLines": "Melvin Butler, the personnel officer at the Langley Memorial Aeronautical Laboratory, had a problem, the scale and nature of which was completely baffling.",
+			"title": "Hidden Figures",
+			"author": "Margot Lee Shetterly",
+			"year": 2016
+		},
+		{
+			"openingLines": "THEY WEATHERED BRUTAL WINTERS, suffered diseases, and learned to cope with the resisting Native Americans. But nothing brought more destruction to Puritan settlements than the Great Hurricane of 1635.",
+			"title": "Stamped from the Beginning",
+			"author": "Ibram X. Kendi",
+			"year": 2016
+		},
+		{
+			"openingLines": "The night clouds were closing in on the salt licks east of the oxbow lakes along the folds in the earth beyond the Yalobusha River. The cotton was at last cleared from the field. Ida Mae tried now to get the children ready and to gather the clothes and quilts and somehow keep her mind off the churning within her.",
+			"title": "The Warmth of Other Suns",
+			"author": "Isabel Wilkerson",
+			"year": 2010
 		}
 	]
 }

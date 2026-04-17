@@ -46,8 +46,28 @@ describe("App", () => {
 		saveState({
 			phase: "gameOver",
 			players: [
-				{ name: "Alice", score: 8 },
-				{ name: "Bob", score: 3 },
+				{
+					name: "Alice",
+					score: 8,
+					stats: {
+						correct: 0,
+						incorrect: 0,
+						currentStreak: 0,
+						bestStreak: 0,
+						genreResults: {},
+					},
+				},
+				{
+					name: "Bob",
+					score: 3,
+					stats: {
+						correct: 0,
+						incorrect: 0,
+						currentStreak: 0,
+						bestStreak: 0,
+						genreResults: {},
+					},
+				},
 			],
 			currentPlayerIndex: 0,
 			targetScore: 8,
@@ -68,8 +88,28 @@ describe("App", () => {
 		saveState({
 			phase: "draw",
 			players: [
-				{ name: "Alice", score: 2 },
-				{ name: "Bob", score: 1 },
+				{
+					name: "Alice",
+					score: 2,
+					stats: {
+						correct: 0,
+						incorrect: 0,
+						currentStreak: 0,
+						bestStreak: 0,
+						genreResults: {},
+					},
+				},
+				{
+					name: "Bob",
+					score: 1,
+					stats: {
+						correct: 0,
+						incorrect: 0,
+						currentStreak: 0,
+						bestStreak: 0,
+						genreResults: {},
+					},
+				},
 			],
 			currentPlayerIndex: 0,
 			targetScore: 8,

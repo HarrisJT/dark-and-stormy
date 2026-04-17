@@ -2,22 +2,52 @@
 	"name": "Children's Movies",
 	"entries": [
 		{
-			"openingLines": "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do.",
-			"title": "Alice's Adventures in Wonderland",
-			"author": "Lewis Carroll",
-			"year": 1865
+			"openingLines": "Mr and Mrs Brown first met Paddington on a railway platform. In fact, that was how he came to have such an unusual name for a bear, for Paddington was the name of the station.",
+			"title": "Paddington",
+			"author": "Michael Bond",
+			"year": 1958
 		},
 		{
-			"openingLines": "When Mary Lennox was sent to Misselthwaite Manor to live with her uncle everybody said she was the most disagreeable-looking child ever seen.",
-			"title": "The Secret Garden",
-			"author": "Frances Hodgson Burnett",
-			"year": 1911
+			"openingLines": "\"There was once a velveteen rabbit, and in the beginning he was really splendid. He was fat and bunchy, as a rabbit should be; his coat was spotted brown and white, he had real thread whiskers, and his ears were lined with pink sateen.\"",
+			"title": "The Velveteen Rabbit",
+			"author": "Margery Williams",
+			"year": 1922
 		},
 		{
-			"openingLines": "Lyra and her daemon moved through the darkening hall, taking care to keep to one side, out of sight of the kitchen.",
-			"title": "The Golden Compass",
-			"author": "Philip Pullman",
-			"year": 1995
+			"openingLines": "\"It was in a space in a thicket that he came into the world, in one of those little, hidden places in the wood which seem to be open on every side but which in fact are completely surrounded by foliage.\"",
+			"title": "Bambi",
+			"author": "Felix Salten",
+			"year": 1923
+		},
+		{
+			"openingLines": "The Mole had been working very hard all the morning, spring-cleaning his little home.",
+			"title": "The Wind in the Willows",
+			"author": "Kenneth Grahame",
+			"year": 1908
+		},
+		{
+			"openingLines": "There was once upon a time a gentleman who married, for his second wife, the proudest and most haughty woman that was ever seen.",
+			"title": "Cinderella",
+			"author": "Charles Perrault",
+			"year": 1697
+		},
+		{
+			"openingLines": "\"I often have wondered about the Strat, have not you?\"",
+			"title": "The Wizard of Oz",
+			"author": "L. Frank Baum",
+			"year": 1900
+		},
+		{
+			"openingLines": "Once upon a time there was a piece of wood.",
+			"title": "Pinocchio",
+			"author": "Carlo Collodi",
+			"year": 1881
+		},
+		{
+			"openingLines": "It was seven o'clock of a very warm evening in the Seeonee hills when Father Wolf woke up from his day's rest, scratched himself, yawned, and spread out his paws one after the other to get rid of the sleepy feeling in their tips.",
+			"title": "The Jungle Book",
+			"author": "Rudyard Kipling",
+			"year": 1894
 		}
 	]
 }

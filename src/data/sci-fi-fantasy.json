@@ -2,10 +2,76 @@
 	"name": "Sci-Fi/Fantasy",
 	"entries": [
 		{
+			"openingLines": "In a hole in the ground there lived a hobbit.",
+			"title": "The Hobbit",
+			"author": "J.R.R. Tolkien",
+			"year": 1937
+		},
+		{
+			"openingLines": "When Mr. Bilbo Baggins of Bag End announced that he would shortly be celebrating his eleventy-first birthday with a party of special magnificence, there was much talk and excitement in Hobbiton.",
+			"title": "The Fellowship of the Ring",
+			"author": "J.R.R. Tolkien",
+			"year": 1954
+		},
+		{
+			"openingLines": "In the week before their departure to Arrakis, when all the final scurrying about had reached a nearly unbearable frenzy, an old crone came to visit the mother of the boy, Paul.",
+			"title": "Dune",
+			"author": "Frank Herbert",
+			"year": 1965
+		},
+		{
+			"openingLines": "His name was Gaal Dornick and he was just a country boy who had never seen Trantor before.",
+			"title": "Foundation",
+			"author": "Isaac Asimov",
+			"year": 1951
+		},
+		{
 			"openingLines": "It was a bright cold day in April, and the clocks were striking thirteen.",
-			"title": "Nineteen Eighty-Four",
+			"title": "1984",
 			"author": "George Orwell",
 			"year": 1949
+		},
+		{
+			"openingLines": "A squat grey building of only thirty-four stories. Over the main entrance the words “Central London Hatchery and Conditioning Centre” and, in a shield, the World State's Motto: “Community, Identity, Stability”.",
+			"title": "Brave New World",
+			"author": "Aldous Huxley",
+			"year": 1932
+		},
+		{
+			"openingLines": "The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us.",
+			"title": "The Time Machine",
+			"author": "H.G. Wells",
+			"year": 1895
+		},
+		{
+			"openingLines": "No one would have believed, in the last years of the nineteenth century, that this world was being watched keenly and closely by intelligences greater than man's and yet as mortal as his own; that as men busied themselves about their various concerns they were being scrutinized and studied, perhaps almost as narrowly as a man with a microscope might scrutinize the transient creatures that swarm and multiply in a drop of water.",
+			"title": "The War of the Worlds",
+			"author": "H.G. Wells",
+			"year": 1898
+		},
+		{
+			"openingLines": "It was a pleasure to burn.",
+			"title": "Fahrenheit 451",
+			"author": "Ray Bradbury",
+			"year": 1953
+		},
+		{
+			"openingLines": "I'll make my report as if I told a story, for I was taught as a child on my homeworld that Truth is a matter of the imagination.",
+			"title": "The Left Hand of Darkness",
+			"author": "Ursula K. Le Guin",
+			"year": 1969
+		},
+		{
+			"openingLines": "The island of Gont, a single mountain that lifts its peak a mile above the storm-racked Northeast Sea, is a land famous for wizards.",
+			"title": "A Wizard of Earthsea",
+			"author": "Ursula K. Le Guin",
+			"year": 1968
+		},
+		{
+			"openingLines": "January 1999: Rocket Summer\n\nOne minute it was Ohio winter, with doors closed, windows locked, the panes blind with frost, icicles fringing every roof, children skiing on slopes, housewives lumbering like great black bears in their furs along the icy streets.",
+			"title": "The Martian Chronicles",
+			"author": "Ray Bradbury",
+			"year": 1950
 		},
 		{
 			"openingLines": "The sky above the port was the color of television, tuned to a dead channel.",
@@ -14,10 +80,106 @@
 			"year": 1984
 		},
 		{
-			"openingLines": "In a hole in the ground there lived a hobbit.",
-			"title": "The Hobbit",
+			"openingLines": "The Deliverator belongs to an elite order, a hallowed subcategory. He's got esprit up to here. Right now, he is preparing to carry out his third mission of the night.",
+			"title": "Snow Crash",
+			"author": "Neal Stephenson",
+			"year": 1992
+		},
+		{
+			"openingLines": "When I wake up, the other side of the bed is cold. My fingers stretch out, seeking Prim's warmth but finding only the rough canvas cover of the mattress.",
+			"title": "The Hunger Games",
+			"author": "Suzanne Collins",
+			"year": 2008
+		},
+		{
+			"openingLines": "Mr and Mrs Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much.",
+			"title": "Harry Potter and the Philosopher's Stone",
+			"author": "J.K. Rowling",
+			"year": 1997
+		},
+		{
+			"openingLines": "We should start back,\" Gared urged as the woods began to grow dark around them. \"The wildlings are dead.\"",
+			"title": "A Game of Thrones",
+			"author": "George R.R. Martin",
+			"year": 1996
+		},
+		{
+			"openingLines": "It was night again. The Waystone Inn lay in silence, and it was a silence of three parts.",
+			"title": "The Name of the Wind",
+			"author": "Patrick Rothfuss",
+			"year": 2007
+		},
+		{
+			"openingLines": "Szeth-son-son-Vallano, Truthless of Shinovar, wore white on the day he was to kill a king.",
+			"title": "The Way of Kings",
+			"author": "Brandon Sanderson",
+			"year": 2010
+		},
+		{
+			"openingLines": "\"I've watched through his eyes, I've listened through his ears, and I tell you he's the one. Or at least as close as we're going to get.\"",
+			"title": "Ender's Game",
+			"author": "Orson Scott Card",
+			"year": 1985
+		},
+		{
+			"openingLines": "Tonight we're going to show you eight silent ways to kill a man.",
+			"title": "The Forever War",
+			"author": "Joe Haldeman",
+			"year": 1974
+		},
+		{
+			"openingLines": "The Hegemony Consul sat on the balcony of his ebony spaceship and played Rachmaninoff's Concerto No. 2 on an ancient but well-maintained Steinway while great, green, saurian things surged and bellowed in the swamps below.",
+			"title": "Hyperion",
+			"author": "Dan Simmons",
+			"year": 1989
+		},
+		{
+			"openingLines": "I always get the shakes before a drop.",
+			"title": "Starship Troopers",
+			"author": "Robert A. Heinlein",
+			"year": 1959
+		},
+		{
+			"openingLines": "The bells of St. Mark's were ringing changes up on the mountain when Bud skated over to the mod parlor to upgrade his skull gun. Bud had a nice new pair of blades with a top speed of anywhere from a hundred to a hundred and fifty kilometers, depending on how fat you were and whether or not you wore aero.",
+			"title": "The Diamond Age",
+			"author": "Neal Stephenson",
+			"year": 1995
+		},
+		{
+			"openingLines": "Two tires fly. Two wail. A bamboo grove, all chopped down. From it, warring songs.",
+			"title": "Cryptonomicon",
+			"author": "Neal Stephenson",
+			"year": 1999
+		},
+		{
+			"openingLines": "Once there were four children whose names were Peter, Susan, Edmund and Lucy.",
+			"title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+			"author": "C.S. Lewis",
+			"year": 1950
+		},
+		{
+			"openingLines": "Lyra and her daemon moved through the darkening Hall, taking care to keep to one side, out of the sight of the Scholars and the Guests.",
+			"title": "His Dark Materials: Northern Lights",
+			"author": "Philip Pullman",
+			"year": 1995
+		},
+		{
+			"openingLines": "There was Eru, the One, who in Arda is called Ilúvatar; and he made first the Ainur, the Holy Ones, that were the offspring of his thought, and they were with him before aught else was made. And he spoke to them, propounding to them themes of music; and they sang before him, and he was glad.",
+			"title": "The Silmarillion",
 			"author": "J.R.R. Tolkien",
-			"year": 1937
+			"year": 1977
+		},
+		{
+			"openingLines": "The man in black fled across the desert, and the gunslinger followed.",
+			"title": "The Dark Tower: The Gunslinger",
+			"author": "Stephen King",
+			"year": 1982
+		},
+		{
+			"openingLines": "to wound the autumnal city.\nSo howled out for the world to give him a name.\nThe in-dark answered with wind.",
+			"title": "Dhalgren",
+			"author": "Samuel R. Delany",
+			"year": 1974
 		}
 	]
 }

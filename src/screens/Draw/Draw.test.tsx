@@ -6,8 +6,28 @@ import Draw from "./Draw";
 const baseState: GameState = {
 	phase: "draw",
 	players: [
-		{ name: "Alice", score: 3 },
-		{ name: "Bob", score: 5 },
+		{
+			name: "Alice",
+			score: 3,
+			stats: {
+				correct: 0,
+				incorrect: 0,
+				currentStreak: 0,
+				bestStreak: 0,
+				genreResults: {},
+			},
+		},
+		{
+			name: "Bob",
+			score: 5,
+			stats: {
+				correct: 0,
+				incorrect: 0,
+				currentStreak: 0,
+				bestStreak: 0,
+				genreResults: {},
+			},
+		},
 	],
 	currentPlayerIndex: 0,
 	targetScore: 8,

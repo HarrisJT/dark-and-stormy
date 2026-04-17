@@ -2,10 +2,16 @@
 	"name": "Mysteries",
 	"entries": [
 		{
-			"openingLines": "Mr. Sherlock Holmes, who was usually very late in the mornings, save upon those not infrequent occasions when he was up all night, was seated at the breakfast table.",
-			"title": "The Hound of the Baskervilles",
-			"author": "Arthur Conan Doyle",
-			"year": 1902
+			"openingLines": "Mrs. Ferrars died on the night of the 16th–17th September—a Thursday.",
+			"title": "The Murder of Roger Ackroyd",
+			"author": "Agatha Christie",
+			"year": 1926
+		},
+		{
+			"openingLines": "In the corner of a first-class smoking carriage, Mr. Justice Wargrave, lately retired from the bench, was travelling to Sticklehaven.",
+			"title": "And Then There Were None",
+			"author": "Agatha Christie",
+			"year": 1939
 		},
 		{
 			"openingLines": "It was about eleven o'clock in the morning, mid October, with the sun not shining and a look of hard wet rain in the clearness of the foothills.",
@@ -14,10 +20,136 @@
 			"year": 1939
 		},
 		{
-			"openingLines": "Miss Marple was sitting by her window one morning in the cheerful winter sunshine.",
-			"title": "A Murder Is Announced",
+			"openingLines": "Samuel Spade's jaw was long and bony, his chin a jutting v under the more flexible v of his mouth.",
+			"title": "The Maltese Falcon",
+			"author": "Dashiell Hammett",
+			"year": 1930
+		},
+		{
+			"openingLines": "It was five o'clock on a winter's morning in Syria.",
+			"title": "Murder on the Orient Express",
 			"author": "Agatha Christie",
-			"year": 1950
+			"year": 1934
+		},
+		{
+			"openingLines": "Mr Sherlock Holmes, who was usually very late in the mornings, save upon those not infrequent occasions when he stayed up all night, was seated at the breakfast table.",
+			"title": "The Hound of the Baskervilles",
+			"author": "Arthur Conan Doyle",
+			"year": 1901
+		},
+		{
+			"openingLines": "\"In the year 1878 I took my degree of Doctor of Medicine of the University of London, and proceeded to Netley to go through the course prescribed for surgeons in the Army.\"",
+			"title": "A Study in Scarlet",
+			"author": "Arthur Conan Doyle",
+			"year": 1887
+		},
+		{
+			"openingLines": "\"I address these lines—written in India—to my relatives in England.\"",
+			"title": "The Moonstone",
+			"author": "Wilkie Collins",
+			"year": 1868
+		},
+		{
+			"openingLines": "It happened every year, was almost a ritual. And this was his eighty-second birthday. When, as usual, the flower was delivered, he took off the wrapping paper and then picked up the telephone to call Detective Superintendent Morell who, when he retired, had moved to Lake Siljan in Dalarna.",
+			"title": "The Girl with the Dragon Tattoo",
+			"author": "Stieg Larsson",
+			"year": 2005
+		},
+		{
+			"openingLines": "When I think of my wife, I always think of her head. The shape of it, to begin with—the V of her cheekbones going down to the point of her chin, the weight of her eyelids. I think of her earlobes, which are oddly satisfying, like the tip of a finger.",
+			"title": "Gone Girl",
+			"author": "Gillian Flynn",
+			"year": 2012
+		},
+		{
+			"openingLines": "Renowned curator Jacques Saunière staggered through the vaulted archway of the museum's Grand Gallery and lunged for the nearest painting he could see, a Caravaggio.",
+			"title": "The Da Vinci Code",
+			"author": "Dan Brown",
+			"year": 2003
+		},
+		{
+			"openingLines": "Mma Ramotswe had a detective agency in Africa, at the foot of Kgale Hill. These were its assets: a tiny white van, two desks, two chairs, a telephone, and an old typewriter. Then there was a teapot, in which Mma Ramotswe – the only private lady detective in Botswana – brewed redbush tea. And three mugs – one for herself, one for her secretary, and one for the client.",
+			"title": "The No. 1 Ladies' Detective Agency",
+			"author": "Alexander McCall Smith",
+			"year": 1998
+		},
+		{
+			"openingLines": "Behavioral Science, the section of the FBI concerned with serial murder, is located in a basement.",
+			"title": "The Silence of the Lambs",
+			"author": "Thomas Harris",
+			"year": 1988
+		},
+		{
+			"openingLines": "When Sean Devine and Jimmy Marcus were kids, their fathers worked together at the Coleman Candy plant and carried the scent of warm chocolate back home with them at the end of the day.",
+			"title": "Mystic River",
+			"author": "Dennis Lehane",
+			"year": 2001
+		},
+		{
+			"openingLines": "She's buried beneath a weeping willow tree, down towards the old train station, on the other side of the track. I used to watch for her, every morning and evening, and she never once looked up.",
+			"title": "The Girl on the Train",
+			"author": "Paula Hawkins",
+			"year": 2015
+		},
+		{
+			"openingLines": "To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex.",
+			"title": "Sherlock Holmes: A Scandal in Bohemia",
+			"author": "Arthur Conan Doyle",
+			"year": 1892
+		},
+		{
+			"openingLines": "Well, let's start with Elizabeth, shall we? And see where that gets us?",
+			"title": "The Thursday Murder Club",
+			"author": "Richard Osman",
+			"year": 2020
+		},
+		{
+			"openingLines": "Last night I dreamt I went to Manderley again.",
+			"title": "Rebecca",
+			"author": "Daphne du Maurier",
+			"year": 1938
+		},
+		{
+			"openingLines": "It was 7 minutes after midnight. The dog was lying on the grass in the middle of the lawn in front of Mrs Shears' house. Its eyes were closed.",
+			"title": "The Curious Incident of the Dog in the Night-Time",
+			"author": "Mark Haddon",
+			"year": 2003
+		},
+		{
+			"openingLines": "What I am telling you, before you begin my story, is this—two things: I crave truth. And I lie.",
+			"title": "In the Woods",
+			"author": "Tana French",
+			"year": 2007
+		},
+		{
+			"openingLines": "This is the story of what a Woman's patience can endure, and what a Man's resolution can achieve. From the devices of lawyers and the arts of others, the story is told in the words of the people who were actually present at the events described. The story begins at the point where the law and the post leave off.",
+			"title": "The Woman in White",
+			"author": "Wilkie Collins",
+			"year": 1859
+		},
+		{
+			"openingLines": "Marsh is not swamp. Marsh is a space of light, where grass grows in water, and water flows into the sky.",
+			"title": "Where the Crawdads Sing",
+			"author": "Delia Owens",
+			"year": 2018
+		},
+		{
+			"openingLines": "The American handed Leamas another cup of coffee and said, \"Why don't you go back and sleep? We can ring you if he comes.\"",
+			"title": "The Spy Who Came in from the Cold",
+			"author": "John le Carré",
+			"year": 1965
+		},
+		{
+			"openingLines": "The trawler plunged into the angry swells of the dark, furious sea like an awkward animal trying desperately to break out of an impenetrable swamp. The waves rose to goliathan heights, crashing into the hull with the power of raw tonnage; the white sprays caught in the night sky cascaded downward over the deck under the force of the night wind. Everywhere there were the sounds of inanimate pain, wood straining against wood, ropes twisting, stretched to the breaking point. The animal was dying.",
+			"title": "The Bourne Identity",
+			"author": "Robert Ludlum",
+			"year": 1980
+		},
+		{
+			"openingLines": "I haven't laid eyes on the island in several years. The last time was from a friend's boat that ventured into the outer harbor, and I could see it off in the distance, past the inner ring, shrouded in the summer haze, a careless smudge of paint against the sky.",
+			"title": "Shutter Island",
+			"author": "Dennis Lehane",
+			"year": 2003
 		}
 	]
 }

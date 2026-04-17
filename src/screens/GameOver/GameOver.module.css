@@ -29,11 +29,92 @@
 
 .scoreRow {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	gap: 6px;
 	padding: 12px;
 	background: var(--surface);
 	border-radius: var(--radius);
 	border: 1px solid var(--border);
+}
+
+.scoreHeader {
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+}
+
+.rank {
+	color: var(--muted);
+	font-size: 0.85rem;
+	min-width: 1.75em;
+}
+
+.playerName {
+	flex: 1;
+	font-weight: 600;
+}
+
+.score {
+	font-weight: 700;
+}
+
+.playerStats {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 6px 12px;
+	font-size: 0.9rem;
+}
+
+.stat {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+	text-align: left;
+}
+
+.stat dt {
+	font-size: 0.7rem;
+	color: var(--muted);
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+.stat dd {
+	margin: 0;
+	color: var(--text, inherit);
+	font-weight: 600;
+	overflow-wrap: anywhere;
+	word-break: break-word;
+	line-height: 1.25;
+}
+
+.summaryRow {
+	width: 100%;
+	display: flex;
+	gap: 12px;
+}
+
+.summaryItem {
+	flex: 1;
+	padding: 12px;
+	background: var(--surface);
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+}
+
+.summaryValue {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.summaryLabel {
+	font-size: 0.75rem;
+	color: var(--muted);
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 
 .playAgainBtn {

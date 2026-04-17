@@ -7,8 +7,28 @@ import GameOver from "./GameOver";
 const baseState: GameState = {
 	phase: "gameOver",
 	players: [
-		{ name: "Alice", score: 8 },
-		{ name: "Bob", score: 5 },
+		{
+			name: "Alice",
+			score: 8,
+			stats: {
+				correct: 0,
+				incorrect: 0,
+				currentStreak: 0,
+				bestStreak: 0,
+				genreResults: {},
+			},
+		},
+		{
+			name: "Bob",
+			score: 5,
+			stats: {
+				correct: 0,
+				incorrect: 0,
+				currentStreak: 0,
+				bestStreak: 0,
+				genreResults: {},
+			},
+		},
 	],
 	currentPlayerIndex: 0,
 	targetScore: 8,
@@ -36,6 +56,54 @@ describe("GameOver", () => {
 		const rows = screen.getAllByText(/pts/);
 		expect(rows[0]!.textContent).toBe("8 pts");
 		expect(rows[1]!.textContent).toBe("5 pts");
+	});
+
+	it("shows rounds, margin, accuracy, best streak, favorite and worst genre", () => {
+		const state: GameState = {
+			...baseState,
+			players: [
+				{
+					name: "Alice",
+					score: 8,
+					stats: {
+						correct: 8,
+						incorrect: 2,
+						currentStreak: 0,
+						bestStreak: 4,
+						genreResults: {
+							Poetry: { correct: 6, incorrect: 0 },
+							Mysteries: { correct: 2, incorrect: 2 },
+						},
+					},
+				},
+				{
+					name: "Bob",
+					score: 5,
+					stats: {
+						correct: 5,
+						incorrect: 5,
+						currentStreak: 0,
+						bestStreak: 2,
+						genreResults: {
+							Shakespeare: { correct: 5, incorrect: 5 },
+						},
+					},
+				},
+			],
+		};
+		render(
+			<GameOver state={state} onPlayAgain={vi.fn()} onNewGame={vi.fn()} />,
+		);
+		expect(screen.getByText("20")).toBeInTheDocument();
+		expect(screen.getByText("+3")).toBeInTheDocument();
+		expect(screen.getByText("80%")).toBeInTheDocument();
+		expect(screen.getAllByText("Accuracy").length).toBeGreaterThan(0);
+		expect(screen.getAllByText("Best streak").length).toBeGreaterThan(0);
+		expect(screen.getAllByText("Favorite genre").length).toBeGreaterThan(0);
+		expect(screen.getByText("Poetry")).toBeInTheDocument();
+		expect(screen.getByText("Mysteries")).toBeInTheDocument();
+		expect(screen.getByText("Worst genre")).toBeInTheDocument();
+		expect(screen.getByText("Shakespeare")).toBeInTheDocument();
 	});
 
 	it("calls onPlayAgain when Play Again is clicked", async () => {

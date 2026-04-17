@@ -33,9 +33,20 @@ export type GamePhase =
 	| "judge"
 	| "gameOver";
 
+export type GenreResult = { correct: number; incorrect: number };
+
+export type PlayerStats = {
+	correct: number;
+	incorrect: number;
+	currentStreak: number;
+	bestStreak: number;
+	genreResults: Record<string, GenreResult>;
+};
+
 export type Player = {
 	name: string;
 	score: number;
+	stats: PlayerStats;
 };
 
 export type GameState = {
@@ -54,11 +65,11 @@ export type GameState = {
 // Versioned wrapper for localStorage -- bump version when GameState shape changes
 // and update the migration in loadState().
 export type PersistedState = {
-	version: 2;
+	version: 3;
 	state: GameState;
 };
 
-export const STORAGE_VERSION = 2 as const;
+export const STORAGE_VERSION = 3 as const;
 export const TARGET_SCORE_OPTIONS = [5, 8, 10, 15] as const;
 export const DEFAULT_TARGET_SCORE = 8;
 export const MIN_PLAYERS = 2;

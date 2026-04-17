@@ -7,8 +7,28 @@ import Judge from "./Judge";
 const baseState: GameState = {
 	phase: "judge",
 	players: [
-		{ name: "Alice", score: 0 },
-		{ name: "Bob", score: 0 },
+		{
+			name: "Alice",
+			score: 0,
+			stats: {
+				correct: 0,
+				incorrect: 0,
+				currentStreak: 0,
+				bestStreak: 0,
+				genreResults: {},
+			},
+		},
+		{
+			name: "Bob",
+			score: 0,
+			stats: {
+				correct: 0,
+				incorrect: 0,
+				currentStreak: 0,
+				bestStreak: 0,
+				genreResults: {},
+			},
+		},
 	],
 	currentPlayerIndex: 0,
 	targetScore: 8,

@@ -2,22 +2,136 @@
 	"name": "Movies",
 	"entries": [
 		{
-			"openingLines": "It was a pleasure to burn.",
-			"title": "Fahrenheit 451",
-			"author": "Ray Bradbury",
-			"year": 1953
+			"openingLines": "The great fish moved silently through the night water, propelled by short sweeps of its crescent tail.",
+			"title": "Jaws",
+			"author": "Peter Benchley",
+			"year": 1974
 		},
 		{
-			"openingLines": "All children, except one, grow up.",
-			"title": "Peter Pan",
-			"author": "J.M. Barrie",
-			"year": 1911
+			"openingLines": "Jack Torrance thought: Officious little prick.",
+			"title": "The Shining",
+			"author": "Stephen King",
+			"year": 1977
 		},
 		{
-			"openingLines": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-			"title": "Pride and Prejudice",
-			"author": "Jane Austen",
-			"year": 1813
+			"openingLines": "Amerigo Bonasera sat in New York Criminal Court Number 3 and waited for justice; vengeance on the men who had so cruelly hurt his daughter, who had tried to dishonor her.",
+			"title": "The Godfather",
+			"author": "Mario Puzo",
+			"year": 1969
+		},
+		{
+			"openingLines": "When I think of my wife, I always think of her head. The shape of it, to begin with—the V of her cheekbones going down to the point of her chin, the weight of her eyelids. I think of her earlobes, which are oddly satisfying, like the tip of a finger.",
+			"title": "Gone Girl",
+			"author": "Gillian Flynn",
+			"year": 2012
+		},
+		{
+			"openingLines": "Let me say this: bein a idiot is no box of chocolates.",
+			"title": "Forrest Gump",
+			"author": "Winston Groom",
+			"year": 1986
+		},
+		{
+			"openingLines": "The Application for Admission to Stanford Law School was six pages long.",
+			"title": "Legally Blonde",
+			"author": "Amanda Brown",
+			"year": 2001
+		},
+		{
+			"openingLines": "The light hadn't even officially turned green at the intersection of 17th and Broadway before an army of overconfident yellow cabs roared past the tiny deathtrap I was attempting to navigate around the city streets.",
+			"title": "The Devil Wears Prada",
+			"author": "Lauren Weisberger",
+			"year": 2003
+		},
+		{
+			"openingLines": "I scowl with frustration at myself in the mirror. Damn my hair—it just won't behave, and damn Katherine Kavanagh for being ill and subjecting me to this ordeal. I should be studying for my nal exams, which are next week, yet here I am trying to brush my hair into submission. ",
+			"title": "Fifty Shades of Grey",
+			"author": "E.L. James",
+			"year": 2011
+		},
+		{
+			"openingLines": "The willingness of a Wall Street investment bank to pay me hundreds of thousands of dollars to dispense investment advice to grown-ups remains a mystery to me to this day.",
+			"title": "The Big Short",
+			"author": "Michael Lewis",
+			"year": 2010
+		},
+		{
+			"openingLines": "My mother drove me to the airport with the windows rolled down.",
+			"title": "Twilight",
+			"author": "Stephenie Meyer",
+			"year": 2005
+		},
+		{
+			"openingLines": "Who am I? And how, I wonder, will this story end?",
+			"title": "The Notebook",
+			"author": "Nicholas Sparks",
+			"year": 1996
+		},
+		{
+			"openingLines": "Behavioral Science, the section of the FBI concerned with serial murder, is located in a basement.",
+			"title": "Silence of the Lambs",
+			"author": "Thomas Harris",
+			"year": 1988
+		},
+		{
+			"openingLines": "The staff at the United States Department of Justice is accustomed to the sight of Clarice Starling’s back.",
+			"title": "Hannibal",
+			"author": "Thomas Harris",
+			"year": 1999
+		},
+		{
+			"openingLines": "Will Graham sat Crawford down at a picnic table between the house and the ocean and gave him a glass of iced tea.",
+			"title": "Red Dragon",
+			"author": "Thomas Harris",
+			"year": 1981
+		},
+		{
+			"openingLines": "umber whunnnn\nyarrrnnn umber whunnnn\nfaar\nthese sounds: even in the haze.",
+			"title": "Misery",
+			"author": "Stephen King",
+			"year": 1987
+		},
+		{
+			"openingLines": "This happened in 1932, when the state penitentiary was still at Cold Mountain.",
+			"title": "The Green Mile",
+			"author": "Stephen King",
+			"year": 1996
+		},
+		{
+			"openingLines": "News item from the Westover (Me.) weekly Enterprise, August 19, 1966:\n\nExplosion Kills Local Couple: Linoleum Rolls Blamed",
+			"title": "Carrie",
+			"author": "Stephen King",
+			"year": 1974
+		},
+		{
+			"openingLines": "Although I have been told that the ending of my story, as I originally wrote it down, was too abrupt and unsatisfying, I have resisted all temptation to alter it.",
+			"title": "The Woman in Black",
+			"author": "Susan Hill",
+			"year": 1983
+		},
+		{
+			"openingLines": "The office of Gévigne, the lawyer, was on the Boulevard des Capucines.",
+			"title": "Vertigo",
+			"author": "Pierre Boileau & Thomas Narcejac",
+			"year": 1954
+		},
+		{
+			"openingLines": "I didn't know their names. I'd never heard their voices. I didn't even know them by sight, strictly speaking, for their faces were too small to fill in with identifiable features at that distance.",
+			"title": "Rear Window",
+			"author": "Cornell Woolrich",
+			"year": 1942
+		},
+		{
+			"openingLines": "The island was there, and then it wasn't, as if a magician had pulled a cloth over it.",
+			"title": "Shutter Island",
+			"author": "Dennis Lehane",
+			"year": 2003
+		},
+		{
+			"openingLines": "The men of Easy Company, 506th Parachute Infantry Regiment, 101st Airborne Division, U.S. Army, came from different backgrounds, different parts of the country.",
+			"title": "Band of Brothers",
+			"author": "Stephen E. Ambrose",
+			"year": 1992
 		}
 	]
 }

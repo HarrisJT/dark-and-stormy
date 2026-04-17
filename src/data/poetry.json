@@ -2,22 +2,118 @@
 	"name": "Poetry",
 	"entries": [
 		{
-			"openingLines": "April is the cruellest month, breeding lilacs out of the dead land...",
-			"title": "The Waste Land",
-			"author": "T.S. Eliot",
-			"year": 1922
+			"openingLines": "Once upon a midnight dreary, while I pondered, weak and weary,\nOver many a quaint and curious volume of forgotten lore—\nWhile I nodded, nearly napping, suddenly there came a tapping,\nAs of some one gently rapping, rapping at my chamber door.",
+			"title": "The Raven",
+			"author": "Edgar Allan Poe",
+			"year": 1845
 		},
 		{
-			"openingLines": "I saw the best minds of my generation destroyed by madness, starving hysterical naked...",
+			"openingLines": "I saw the best minds of my generation destroyed by madness, starving hysterical naked,\ndragging themselves through the negro streets at dawn looking for an angry fix,\nangelheaded hipsters burning for the ancient heavenly connection to the starry dynamo in the machinery of night,",
 			"title": "Howl",
 			"author": "Allen Ginsberg",
 			"year": 1956
 		},
 		{
-			"openingLines": "Two roads diverged in a yellow wood, and sorry I could not travel both...",
+			"openingLines": "Let us go then, you and I,\nWhen the evening is spread out against the sky\nLike a patient etherized upon a table;",
+			"title": "The Love Song of J. Alfred Prufrock",
+			"author": "T.S. Eliot",
+			"year": 1915
+		},
+		{
+			"openingLines": "Whose woods these are I think I know.\nHis house is in the village though;\nHe will not see me stopping here\nTo watch his woods fill up with snow.",
+			"title": "Stopping by Woods on a Snowy Evening",
+			"author": "Robert Frost",
+			"year": 1923
+		},
+		{
+			"openingLines": "Two roads diverged in a yellow wood,\nAnd sorry I could not travel both\nAnd be one traveler, long I stood\nAnd looked down one as far as I could\nTo where it bent in the undergrowth;",
 			"title": "The Road Not Taken",
 			"author": "Robert Frost",
 			"year": 1916
+		},
+		{
+			"openingLines": "Do not go gentle into that good night,\nOld age should burn and rave at close of day;\nRage, rage against the dying of the light.",
+			"title": "Do Not Go Gentle into That Good Night",
+			"author": "Dylan Thomas",
+			"year": 1952
+		},
+		{
+			"openingLines": "I met a traveller from an antique land,\nWho said—\"Two vast and trunkless legs of stone\nStand in the desert. . . .",
+			"title": "Ozymandias",
+			"author": "Percy Bysshe Shelley",
+			"year": 1818
+		},
+		{
+			"openingLines": "Shall I compare thee to a summer's day?\nThou art more lovely and more temperate:",
+			"title": "Shall I Compare Thee to a Summer's Day",
+			"author": "William Shakespeare",
+			"year": 1609
+		},
+		{
+			"openingLines": "\"Hope\" is the thing with feathers -\nThat perches in the soul -\nAnd sings the tune without the words -\nAnd never stops - at all -",
+			"title": "Hope is the Thing with Feathers",
+			"author": "Emily Dickinson",
+			"year": 1891
+		},
+		{
+			"openingLines": "Because I could not stop for Death –\nHe kindly stopped for me –\nThe Carriage held but just Ourselves –\nAnd Immortality.",
+			"title": "Because I could not stop for Death",
+			"author": "Emily Dickinson",
+			"year": 1890
+		},
+		{
+			"openingLines": "Take this kiss upon the brow!\nAnd, in parting from you now,\nThus much let me avow —",
+			"title": "A Dream Within a Dream",
+			"author": "Edgar Allan Poe",
+			"year": 1849
+		},
+		{
+			"openingLines": "It was many and many a year ago,\nIn a kingdom by the sea,\nThat a maiden there lived whom you may know\nBy the name of Annabel Lee;",
+			"title": "Annabel Lee",
+			"author": "Edgar Allan Poe",
+			"year": 1849
+		},
+		{
+			"openingLines": "If you can keep your head when all about you\n    Are losing theirs and blaming it on you,",
+			"title": "If—",
+			"author": "Rudyard Kipling",
+			"year": 1910
+		},
+		{
+			"openingLines": "Turning and turning in the widening gyre\nThe falcon cannot hear the falconer;",
+			"title": "The Second Coming",
+			"author": "William Butler Yeats",
+			"year": 1919
+		},
+		{
+			"openingLines": "Something there is that doesn't love a wall,\nThat sends the frozen-ground-swell under it,\nAnd spills the upper boulders in the sun;\nAnd makes gaps even two can pass abreast.",
+			"title": "Mending Wall",
+			"author": "Robert Frost",
+			"year": 1914
+		},
+		{
+			"openingLines": "Tyger Tyger, burning bright,\nIn the forests of the night;\nWhat immortal hand or eye,\nCould frame thy fearful symmetry?",
+			"title": "The Tyger",
+			"author": "William Blake",
+			"year": 1794
+		},
+		{
+			"openingLines": "What happens to a dream deferred?",
+			"title": "Harlem",
+			"author": "Langston Hughes",
+			"year": 1951
+		},
+		{
+			"openingLines": "April is the cruellest month, breeding\nLilacs out of the dead land, mixing\nMemory and desire, stirring\nDull roots with spring rain.",
+			"title": "The Waste Land",
+			"author": "T.S. Eliot",
+			"year": 1922
+		},
+		{
+			"openingLines": "When you are old and grey and full of sleep,\nAnd nodding by the fire, take down this book,\nAnd slowly read, and dream of the soft look\nYour eyes had once, and of their shadows deep;",
+			"title": "When You Are Old",
+			"author": "William Butler Yeats",
+			"year": 1893
 		}
 	]
 }

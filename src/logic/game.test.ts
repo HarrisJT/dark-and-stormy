@@ -66,8 +66,28 @@ describe("getNextPlayerIndex", () => {
 describe("applyScore", () => {
 	it("adds the given points to the scorer", () => {
 		const players = [
-			{ name: "Alice", score: 3 },
-			{ name: "Bob", score: 5 },
+			{
+				name: "Alice",
+				score: 3,
+				stats: {
+					correct: 0,
+					incorrect: 0,
+					currentStreak: 0,
+					bestStreak: 0,
+					genreResults: {},
+				},
+			},
+			{
+				name: "Bob",
+				score: 5,
+				stats: {
+					correct: 0,
+					incorrect: 0,
+					currentStreak: 0,
+					bestStreak: 0,
+					genreResults: {},
+				},
+			},
 		];
 		const result1 = applyScore(players, 0, 1);
 		expect(result1[0]?.score).toBe(4);
@@ -77,8 +97,28 @@ describe("applyScore", () => {
 
 	it("does not change other players", () => {
 		const players = [
-			{ name: "Alice", score: 3 },
-			{ name: "Bob", score: 5 },
+			{
+				name: "Alice",
+				score: 3,
+				stats: {
+					correct: 0,
+					incorrect: 0,
+					currentStreak: 0,
+					bestStreak: 0,
+					genreResults: {},
+				},
+			},
+			{
+				name: "Bob",
+				score: 5,
+				stats: {
+					correct: 0,
+					incorrect: 0,
+					currentStreak: 0,
+					bestStreak: 0,
+					genreResults: {},
+				},
+			},
 		];
 		const result = applyScore(players, 0, 1);
 		expect(result[1]?.score).toBe(5);
@@ -88,16 +128,56 @@ describe("applyScore", () => {
 describe("checkWinner", () => {
 	it("returns null when no player has reached target", () => {
 		const players = [
-			{ name: "Alice", score: 7 },
-			{ name: "Bob", score: 5 },
+			{
+				name: "Alice",
+				score: 7,
+				stats: {
+					correct: 0,
+					incorrect: 0,
+					currentStreak: 0,
+					bestStreak: 0,
+					genreResults: {},
+				},
+			},
+			{
+				name: "Bob",
+				score: 5,
+				stats: {
+					correct: 0,
+					incorrect: 0,
+					currentStreak: 0,
+					bestStreak: 0,
+					genreResults: {},
+				},
+			},
 		];
 		expect(checkWinner(players, 8)).toBeNull();
 	});
 
 	it("returns the index of the winning player", () => {
 		const players = [
-			{ name: "Alice", score: 8 },
-			{ name: "Bob", score: 5 },
+			{
+				name: "Alice",
+				score: 8,
+				stats: {
+					correct: 0,
+					incorrect: 0,
+					currentStreak: 0,
+					bestStreak: 0,
+					genreResults: {},
+				},
+			},
+			{
+				name: "Bob",
+				score: 5,
+				stats: {
+					correct: 0,
+					incorrect: 0,
+					currentStreak: 0,
+					bestStreak: 0,
+					genreResults: {},
+				},
+			},
 		];
 		expect(checkWinner(players, 8)).toBe(0);
 	});

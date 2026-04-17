@@ -2,22 +2,136 @@
 	"name": "Novels 1950-Present",
 	"entries": [
 		{
+			"openingLines": "If you really want to hear about it, the first thing you'll probably want to know is where I was born, and what my lousy childhood was like, and how my parents were occupied and all before they had me, and all that David Copperfield kind of crap, but I don't feel like going into it, if you want to know the truth.",
+			"title": "The Catcher in the Rye",
+			"author": "J.D. Salinger",
+			"year": 1951
+		},
+		{
+			"openingLines": "I am an invisible man.",
+			"title": "Invisible Man",
+			"author": "Ralph Ellison",
+			"year": 1952
+		},
+		{
+			"openingLines": "I first met Dean not long after my wife and I split up. I had just gotten over a serious illness that I won't bother to talk about, except that it had something to do with the miserably weary split-up and my feeling that everything was dead.",
+			"title": "On the Road",
+			"author": "Jack Kerouac",
+			"year": 1957
+		},
+		{
+			"openingLines": "Okonkwo was well known throughout the nine villages and even beyond.",
+			"title": "Things Fall Apart",
+			"author": "Chinua Achebe",
+			"year": 1958
+		},
+		{
+			"openingLines": "124 was spiteful. Full of a baby's venom. The women in the house knew it and so did the children.",
+			"title": "Beloved",
+			"author": "Toni Morrison",
+			"year": 1987
+		},
+		{
+			"openingLines": "I was thirty-seven then, strapped in my seat as the huge 747 plunged through dense cloud cover on approach to Hamburg airport.",
+			"title": "Norwegian Wood",
+			"author": "Haruki Murakami",
+			"year": 1987
+		},
+		{
+			"openingLines": "For a man of his age, fifty-two, divorced, he has, to his mind, solved the problem of sex rather well.",
+			"title": "Disgrace",
+			"author": "J.M. Coetzee",
+			"year": 1999
+		},
+		{
+			"openingLines": "I was born in the city of Bombay ..... once upon a time.",
+			"title": "Midnight's Children",
+			"author": "Salman Rushdie",
+			"year": 1981
+		},
+		{
+			"openingLines": "The village of Holcomb stands on the high wheat plains of western Kansas, a lonesome area that other Kansans call \"out there.\"",
+			"title": "In Cold Blood",
+			"author": "Truman Capote",
+			"year": 1966
+		},
+		{
+			"openingLines": "We slept in what had once been the gymnasium.",
+			"title": "The Handmaid's Tale",
+			"author": "Margaret Atwood",
+			"year": 1985
+		},
+		{
+			"openingLines": "I was the shadow of the waxwing slain / By the false azure in the windowpane",
+			"title": "Pale Fire",
+			"author": "Vladimir Nabokov",
+			"year": 1962
+		},
+		{
+			"openingLines": "A screaming comes across the sky.",
+			"title": "Gravity's Rainbow",
+			"author": "Thomas Pynchon",
+			"year": 1973
+		},
+		{
+			"openingLines": "In the beginning was the Word and the Word was with God, and the Word was God.",
+			"title": "The Name of the Rose",
+			"author": "Umberto Eco",
+			"year": 1980
+		},
+		{
+			"openingLines": "Here is the house. It is green and white. It has a red door. It is very pretty. Here is the family. Mother, Father, Dick, and Jane live in the green-and-white house. They are very happy.",
+			"title": "The Bluest Eye",
+			"author": "Toni Morrison",
+			"year": 1970
+		},
+		{
+			"openingLines": "The play — for which Briony had designed the posters, programs, and tickets, constructed the sales booth out of a folding screen tipped on its side, and lined the collection box in red crêpe paper — was written by her in a two-week tempest of composition, causing her to miss a breakfast and a lunch.",
+			"title": "Atonement",
+			"author": "Ian McEwan",
+			"year": 2001
+		},
+		{
+			"openingLines": "Early in the morning, late in the century, Cricklewood Broadway. At 6.27am on 1 January 1975, Alfred Archibald Jones was dressed in corduroy and sat in a fume-filled Cavalier Musketeer Estate face forward toward the most beautiful part of Cricklewood Broadway, which was not the Broadway itself but the little passage cut between Woolworths and Marks & Spencer through which, if you angled your head just right, you could see a small, cheerful quadrant of the Jubilee line station.",
+			"title": "White Teeth",
+			"author": "Zadie Smith",
+			"year": 2000
+		},
+		{
+			"openingLines": "\"'To be born again,' sang Gibreel Farishta tumbling from the heavens, 'first you have to die.'\"",
+			"title": "The Satanic Verses",
+			"author": "Salman Rushdie",
+			"year": 1988
+		},
+		{
+			"openingLines": "This is not for you.",
+			"title": "House of Leaves",
+			"author": "Mark Z. Danielewski",
+			"year": 2000
+		},
+		{
+			"openingLines": "It seems increasingly likely that I really will undertake the expedition that has been preoccupying my imagination now for some days.",
+			"title": "The Remains of the Day",
+			"author": "Kazuo Ishiguro",
+			"year": 1989
+		},
+		{
+			"openingLines": "Lolita, light of my life, fire of my loins. My sin, my soul. Lo-lee-ta: the tip of the tongue taking a trip of three steps down the palate to tap, at three, on the teeth. Lo. Lee. Ta.",
+			"title": "Lolita",
+			"author": "Vladimir Nabokov",
+			"year": 1955
+		},
+		{
 			"openingLines": "Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.",
 			"title": "One Hundred Years of Solitude",
 			"author": "Gabriel García Márquez",
 			"year": 1967
 		},
 		{
-			"openingLines": "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn't know what I was doing in New York.",
-			"title": "The Bell Jar",
-			"author": "Sylvia Plath",
-			"year": 1963
-		},
-		{
-			"openingLines": "If you really want to hear about it, the first thing you'll probably want to know is where I was born, and what my lousy childhood was like...",
-			"title": "The Catcher in the Rye",
-			"author": "J.D. Salinger",
-			"year": 1951
+			"openingLines": "Mother died today. Or, maybe, yesterday; I can't be sure.",
+			"title": "The Stranger",
+			"author": "Albert Camus",
+			"year": 1942
 		}
 	]
 }

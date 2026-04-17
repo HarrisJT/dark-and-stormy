@@ -96,8 +96,35 @@ export function gameReducer(
 		case "JUDGE": {
 			if (!state) return null;
 			assertTransition(state, "judge", "JUDGE");
-			if (!action.correct) return advancePlayer(state);
-			const newPlayers = applyScore(state.players, state.currentPlayerIndex, 1);
+			const genre = state.currentGenre;
+			invariant(genre, "JUDGE requires a currentGenre");
+			const withStats = state.players.map((p, i) => {
+				if (i !== state.currentPlayerIndex) return p;
+				const currentStreak = action.correct ? p.stats.currentStreak + 1 : 0;
+				const prev = p.stats.genreResults[genre] ?? {
+					correct: 0,
+					incorrect: 0,
+				};
+				return {
+					...p,
+					stats: {
+						correct: p.stats.correct + (action.correct ? 1 : 0),
+						incorrect: p.stats.incorrect + (action.correct ? 0 : 1),
+						currentStreak,
+						bestStreak: Math.max(p.stats.bestStreak, currentStreak),
+						genreResults: {
+							...p.stats.genreResults,
+							[genre]: {
+								correct: prev.correct + (action.correct ? 1 : 0),
+								incorrect: prev.incorrect + (action.correct ? 0 : 1),
+							},
+						},
+					},
+				};
+			});
+			if (!action.correct)
+				return advancePlayer({ ...state, players: withStats });
+			const newPlayers = applyScore(withStats, state.currentPlayerIndex, 1);
 			const winnerIdx = checkWinner(newPlayers, state.targetScore);
 			if (winnerIdx !== null)
 				return { ...state, players: newPlayers, phase: "gameOver" };

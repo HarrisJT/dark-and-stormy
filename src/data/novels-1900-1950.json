@@ -2,15 +2,75 @@
 	"name": "Novels 1900-1950",
 	"entries": [
 		{
-			"openingLines": "Mother died today.",
-			"title": "The Stranger",
-			"author": "Albert Camus",
-			"year": 1942
+			"openingLines": "Mrs. Dalloway said she would buy the flowers herself.",
+			"title": "Mrs. Dalloway",
+			"author": "Virginia Woolf",
+			"year": 1925
 		},
 		{
-			"openingLines": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.",
-			"title": "The Great Gatsby",
-			"author": "F. Scott Fitzgerald",
+			"openingLines": "Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed.",
+			"title": "Ulysses",
+			"author": "James Joyce",
+			"year": 1922
+		},
+		{
+			"openingLines": "Through the fence, between the curling flower spaces, I could see them hitting.",
+			"title": "The Sound and the Fury",
+			"author": "William Faulkner",
+			"year": 1929
+		},
+		{
+			"openingLines": "Jewel and I come up from the field, following the path in single file.",
+			"title": "As I Lay Dying",
+			"author": "William Faulkner",
+			"year": 1930
+		},
+		{
+			"openingLines": "Robert Cohn was once middleweight boxing champion of Princeton. Do not think that I am very much impressed by that as a boxing title, but it meant a lot to Cohn.",
+			"title": "The Sun Also Rises",
+			"author": "Ernest Hemingway",
+			"year": 1926
+		},
+		{
+			"openingLines": "In the late summer of that year we lived in a house in a village that looked across the river and the plain to the mountains.",
+			"title": "A Farewell to Arms",
+			"author": "Ernest Hemingway",
+			"year": 1929
+		},
+		{
+			"openingLines": "We are at rest five miles behind the front. Yesterday we were relieved, and now our bellies are full of beef and haricot beans. We are satisfied and at peace.",
+			"title": "All Quiet on the Western Front",
+			"author": "Erich Maria Remarque",
+			"year": 1928
+		},
+		{
+			"openingLines": "An unassuming young man was travelling, in midsummer, from his native city of Hamburg to Davos-Platz in the Canton of the Grisons, on a three weeks' visit.",
+			"title": "The Magic Mountain",
+			"author": "Thomas Mann",
+			"year": 1924
+		},
+		{
+			"openingLines": "As Gregor Samsa awoke from a night of uneasy dreaming, he found himself transformed in his bed into a gigantic insect.",
+			"title": "The Metamorphosis",
+			"author": "Franz Kafka",
+			"year": 1915
+		},
+		{
+			"openingLines": "“It’s a remarkable piece of apparatus,” said the officer to the explorer and surveyed with a certain air of admiration the apparatus which was after all so familiar to him.",
+			"title": "In the Penal Colony",
+			"author": "Franz Kafka",
+			"year": 1914
+		},
+		{
+			"openingLines": "\"What is this. - What - is this . . . ?\"",
+			"title": "Buddenbrooks",
+			"author": "Thomas Mann",
+			"year": 1901
+		},
+		{
+			"openingLines": "Someone must have slandered Josef K., for one morning, without having done anything truly wrong, he was arrested.",
+			"title": "The Trial",
+			"author": "Franz Kafka",
 			"year": 1925
 		},
 		{
@@ -18,6 +78,48 @@
 			"title": "A Portrait of the Artist as a Young Man",
 			"author": "James Joyce",
 			"year": 1916
+		},
+		{
+			"openingLines": "There was no hope for him this time: it was the third stroke. Night after night I had passed the house (it was vacation time) and studied the lighted square of window: and night after night I had found it lighted in the same way, faintly and evenly.",
+			"title": "Dubliners",
+			"author": "James Joyce",
+			"year": 1914
+		},
+		{
+			"openingLines": "On the pleasant shore of the French Riviera, about half way between Marseilles and the Italian border, stands a large, proud, rose-colored hotel.",
+			"title": "Tender Is the Night",
+			"author": "F. Scott Fitzgerald",
+			"year": 1934
+		},
+		{
+			"openingLines": "In 1913, when Anthony Patch was twenty-five, two years were already gone since irony, the Holy Ghost of this later day, had, theoretically at least, descended upon him.",
+			"title": "The Beautiful and Damned",
+			"author": "F. Scott Fitzgerald",
+			"year": 1922
+		},
+		{
+			"openingLines": "Amory Blaine inherited from his mother every trait, except the stray inexpressible few, that made him worth while.",
+			"title": "This Side of Paradise",
+			"author": "F. Scott Fitzgerald",
+			"year": 1920
+		},
+		{
+			"openingLines": "In my younger and more vulnerable years my father gave me some advice I've been turning over in my mind ever since. Whenever you feel like criticising any one, he told me, just remember that all the people in this world haven't had the advantages that you've had.",
+			"title": "The Great Gatsby",
+			"author": "F. Scott Fitzgerald",
+			"year": 1925
+		},
+		{
+			"openingLines": "He lay flat on the brown, pine-needled floor of the forest, his chin on his folded arms, and high overhead the wind blew in the tops of the pine trees.",
+			"title": "For Whom the Bell Tolls",
+			"author": "Ernest Hemingway",
+			"year": 1940
+		},
+		{
+			"openingLines": "Mother died today. Or, maybe, yesterday; I can't be sure.",
+			"title": "The Stranger",
+			"author": "Albert Camus",
+			"year": 1942
 		}
 	]
 }

@@ -1,7 +1,21 @@
-import type { GameState, Player, RNG } from "types";
+import type { GameState, Player, PlayerStats, RNG } from "types";
 import { MIN_PLAYERS } from "types";
 import { createDeck, shuffle } from "./deck";
 import { invariant } from "./invariant";
+
+export function emptyStats(): PlayerStats {
+	return {
+		correct: 0,
+		incorrect: 0,
+		currentStreak: 0,
+		bestStreak: 0,
+		genreResults: {},
+	};
+}
+
+export function makePlayer(name: string, score = 0): Player {
+	return { name, score, stats: emptyStats() };
+}
 
 export function createInitialState(
 	names: string[],
@@ -15,7 +29,7 @@ export function createInitialState(
 	return {
 		phase: "draw",
 		players: shuffle(
-			names.map((name) => ({ name, score: 0 })),
+			names.map((name) => makePlayer(name)),
 			rng,
 		),
 		currentPlayerIndex: 0,

@@ -2,22 +2,220 @@
 	"name": "Children's Books",
 	"entries": [
 		{
-			"openingLines": "Where's Papa going with that axe?",
+			"openingLines": "The night Max wore his wolf suit and made mischief of one kind and another his mother called him \"WILD THING!\" and Max said \"I'LL EAT YOU UP!\" so he was sent to bed without eating anything.",
+			"title": "Where the Wild Things Are",
+			"author": "Maurice Sendak",
+			"year": 1963
+		},
+		{
+			"openingLines": "In the light of the moon a little egg lay on a leaf.",
+			"title": "The Very Hungry Caterpillar",
+			"author": "Eric Carle",
+			"year": 1969
+		},
+		{
+			"openingLines": "\"Where's Papa going with that ax?\" said Fern to her mother as they were setting the table for breakfast.",
 			"title": "Charlotte's Web",
 			"author": "E.B. White",
 			"year": 1952
 		},
 		{
-			"openingLines": "Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much.",
-			"title": "Harry Potter and the Philosopher's Stone",
-			"author": "J.K. Rowling",
-			"year": 1997
+			"openingLines": "Here is Edward Bear, coming downstairs now, bump, bump, bump, on the back of his head, behind Christopher Robin.",
+			"title": "Winnie-the-Pooh",
+			"author": "A.A. Milne",
+			"year": 1926
+		},
+		{
+			"openingLines": "The sun did not shine. It was too wet to play. So we sat in the house all that cold, cold, wet day.",
+			"title": "The Cat in the Hat",
+			"author": "Dr. Seuss",
+			"year": 1957
+		},
+		{
+			"openingLines": "In the great green room there was a telephone and a red balloon and a picture of the cow jumping over the moon.",
+			"title": "Goodnight Moon",
+			"author": "Margaret Wise Brown",
+			"year": 1947
 		},
 		{
 			"openingLines": "Once there were four children whose names were Peter, Susan, Edmund and Lucy.",
 			"title": "The Lion, the Witch and the Wardrobe",
 			"author": "C.S. Lewis",
 			"year": 1950
+		},
+		{
+			"openingLines": "Alice was beginning to get very tired of sitting by her sister on the riverbank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, 'and what is the use of a book', thought Alice, 'without pictures or conversation?'",
+			"title": "Alice's Adventures in Wonderland",
+			"author": "Lewis Carroll",
+			"year": 1865
+		},
+		{
+			"openingLines": "All children, except one, grow up.",
+			"title": "Peter Pan",
+			"author": "J.M. Barrie",
+			"year": 1911
+		},
+		{
+			"openingLines": "Dorothy lived in the midst of the great Kansas prairies, with Uncle Henry, who was a farmer, and Aunt Em, who was the farmer's wife.",
+			"title": "The Wonderful Wizard of Oz",
+			"author": "L. Frank Baum",
+			"year": 1900
+		},
+		{
+			"openingLines": "Mr and Mrs Brown first met Paddington on a railway platform. In fact, that was how he came to have such an unusual name for a bear, for Paddington was the name of the station.",
+			"title": "Paddington Bear",
+			"author": "Michael Bond",
+			"year": 1958
+		},
+		{
+			"openingLines": "\"Once upon a time there were four little Rabbits, and their names were— Flopsy, Mopsy, Cotton-tail, and Peter.\"",
+			"title": "The Tale of Peter Rabbit",
+			"author": "Beatrix Potter",
+			"year": 1902
+		},
+		{
+			"openingLines": "It was a dark and stormy night.",
+			"title": "A Wrinkle in Time",
+			"author": "Madeleine L'Engle",
+			"year": 1962
+		},
+		{
+			"openingLines": "This is a story about something that happened long ago when your grandfather was a child. It is a very important story because it shows how all the comings and goings between our own world and the land of Narnia first began.",
+			"title": "The Chronicles of Narnia: The Magician's Nephew",
+			"author": "C.S. Lewis",
+			"year": 1955
+		},
+		{
+			"openingLines": "Ba-room, ba-room, ba-room, baripity, baripity, baripity, baripity—Good. His dad had the pickup going.",
+			"title": "Bridge to Terabithia",
+			"author": "Katherine Paterson",
+			"year": 1977
+		},
+		{
+			"openingLines": "This story begins within the walls of a castle, with the birth of a mouse. A small mouse, the last of his litter and the only one who survived. And the last thing that the mother mouse said, before she died, was this: \"He is such a disappointment.\"",
+			"title": "The Tale of Despereaux",
+			"author": "Kate DiCamillo",
+			"year": 2003
+		},
+		{
+			"openingLines": "My name is India Opal Buloni, and last summer my daddy, the preacher, sent me to the store for a box of macaroni-and-cheese, some white rice, and two tomatoes and I came back with a dog.",
+			"title": "Because of Winn-Dixie",
+			"author": "Kate DiCamillo",
+			"year": 2000
+		},
+		{
+			"openingLines": "I am Ivan. I am a gorilla. It's not as easy as it looks.",
+			"title": "The One and Only Ivan",
+			"author": "Katherine Applegate",
+			"year": 2011
+		},
+		{
+			"openingLines": "\"Harriet was trying to explain to Sport how to play Town. 'See, first you make up the name of the town. Then you write down the names of all the people who live in it.'\"",
+			"title": "Harriet the Spy",
+			"author": "Louise Fitzhugh",
+			"year": 1964
+		},
+		{
+			"openingLines": "My dear Saxonberg: I have been thinking about you and about Jamie and Claudia, and I have decided to give you the whole story — not just a part of it.",
+			"title": "From the Mixed-Up Files of Mrs. Basil E. Frankweiler",
+			"author": "E.L. Konigsburg",
+			"year": 1967
+		},
+		{
+			"openingLines": "\"Mrs. Rachel Lynde lived just where the Avonlea main road dipped down into a little hollow, fringed with alders and ladies' eardrops and traversed by a brook that had its source away back in the woods of the old Cuthbert place; it was reputed to be an intricate, headlong brook in its earlier course through those woods, with dark secrets of pool and cascade; but by the time it reached Lynde's Hollow it was a quiet, well-conducted little stream, for not even a brook could run past Mrs. Rachel Lynde's door without due regard for decency and decorum; it probably was conscious that Mrs. Rachel Lynde was sitting at her window, keeping a sharp eye on everything that passed, from brooks and children up, and that if she noticed anything odd or out of place she would never rest until she had ferreted out the whys and wherefores thereof.\"",
+			"title": "Anne of Green Gables",
+			"author": "L.M. Montgomery",
+			"year": 1908
+		},
+		{
+			"openingLines": "When Mary Lennox was sent to Misselthwaite Manor to live with her uncle everybody said she was the most disagreeable-looking child ever seen.",
+			"title": "The Secret Garden",
+			"author": "Frances Hodgson Burnett",
+			"year": 1911
+		},
+		{
+			"openingLines": "\"Christmas won't be Christmas without any presents,\" grumbled Jo, lying on the rug.",
+			"title": "Little Women",
+			"author": "Louisa May Alcott",
+			"year": 1868
+		},
+		{
+			"openingLines": "The tramp steamer Drake plowed away from the coast of India and pushed \n its blunt prow into the Arabian Sea, homeward bound. Slowly it made its way\n west toward the Gulf of Aden. Its hold was loaded with coffee, rice, tea, oil \nseeds and jute. Black smoke poured from its one stack, darkening the hot \ncloudless sky",
+			"title": "The Black Stallion",
+			"author": "Walter Farley",
+			"year": 1945
+		},
+		{
+			"openingLines": "Way out at the end of a tiny little town was an old overgrown garden, and in the garden was an old house, and in the house lived Pippi Longstocking.",
+			"title": "Pippi Longstocking",
+			"author": "Astrid Lindgren",
+			"year": 1945
+		},
+		{
+			"openingLines": "Ramona Quimby hoped her parents would forget to give her a little talking-to.",
+			"title": "Ramona Quimby, Age 8",
+			"author": "Beverly Cleary",
+			"year": 1981
+		},
+		{
+			"openingLines": "\"When Mrs. Frederick C. Little's second son arrived, everybody noticed that he was not much bigger than a mouse. The truth of the matter was, the baby looked very much like a mouse in every way. He was only about two inches high; and he had a mouse's sharp nose, a mouse's tail, a mouse's whiskers, and the pleasant, shy manner of a mouse.\"",
+			"title": "Stuart Little",
+			"author": "E.B. White",
+			"year": 1945
+		},
+		{
+			"openingLines": "It's a funny thing about mothers and fathers. Even when their own child is the most disgusting little blister you could ever imagine, they still think that he or she is wonderful.",
+			"title": "Matilda",
+			"author": "Roald Dahl",
+			"year": 1988
+		},
+		{
+			"openingLines": "These two very old people are the father and mother of Mr. Bucket. Their names are Grandpa Joe and Grandma Josephine.",
+			"title": "Charlie and the Chocolate Factory",
+			"author": "Roald Dahl",
+			"year": 1964
+		},
+		{
+			"openingLines": "Until he was four years old, James Henry Trotter had a happy life. He lived peacefully with his mother and his father in a beautiful house beside the sea.",
+			"title": "James and the Giant Peach",
+			"author": "Roald Dahl",
+			"year": 1961
+		},
+		{
+			"openingLines": "Sophie couldn't sleep. A brilliant moonbeam was slanting through a gap in the curtains. It was shining right across her bed and onto the white wall opposite.",
+			"title": "The BFG",
+			"author": "Roald Dahl",
+			"year": 1982
+		},
+		{
+			"openingLines": "When I left my office that beautiful spring day, I had no idea what was in store for me.",
+			"title": "Where the Red Fern Grows",
+			"author": "Wilson Rawls",
+			"year": 1961
+		},
+		{
+			"openingLines": "Thirteen-year-old Brian Robeson maintained his white-knuckle grip on the small plane's controls.",
+			"title": "Hatchet",
+			"author": "Gary Paulsen",
+			"year": 1987
+		},
+		{
+			"openingLines": "It was almost December, and Jonas was beginning to be frightened.",
+			"title": "The Giver",
+			"author": "Lois Lowry",
+			"year": 1993
+		},
+		{
+			"openingLines": "Look, I didn't want to be a half-blood. If you're reading this because you think you might be one, my advice is: close this book right now. Believe whatever lie your mom or dad told you about your birth, and try to lead a normal life.",
+			"title": "Percy Jackson and the Olympians: The Lightning Thief",
+			"author": "Rick Riordan",
+			"year": 2005
+		},
+		{
+			"openingLines": "Wind howled through the night, carrying a scent that would change the world.",
+			"title": "Eragon",
+			"author": "Christopher Paolini",
+			"year": 2003
 		}
 	]
 }
